@@ -1,0 +1,69 @@
+[
+  {
+    "test": "minimum_config",
+    "interval": 1,
+    "max_age": 4,
+    "theoretical_max": 5.0,
+    "measured": 4.681,
+    "passed": true
+  },
+  {
+    "test": "deep_hierarchy",
+    "levels": 3,
+    "theoretical_max": 8.0,
+    "measured": 8.157,
+    "initial_auth": true,
+    "passed": true
+  },
+  {
+    "test": "concurrent_children",
+    "num_children": 50,
+    "initial_authenticated": 50,
+    "denied_after_expiry": 50,
+    "elapsed_s": 9.04,
+    "all_revoked": true,
+    "passed": true
+  },
+  {
+    "test": "clock_skew",
+    "details": [
+      {
+        "skew": "exact",
+        "current_epoch": 1000,
+        "age": 0,
+        "is_fresh": true
+      },
+      {
+        "skew": "+1 epoch",
+        "current_epoch": 1001,
+        "age": 1,
+        "is_fresh": true
+      },
+      {
+        "skew": "+2 epochs",
+        "current_epoch": 1002,
+        "age": 2,
+        "is_fresh": true
+      },
+      {
+        "skew": "+3 epochs (max)",
+        "current_epoch": 1003,
+        "age": 3,
+        "is_fresh": true
+      },
+      {
+        "skew": "+4 epochs (expired)",
+        "current_epoch": 1004,
+        "age": 4,
+        "is_fresh": false
+      },
+      {
+        "skew": "-1 epoch (future hb)",
+        "current_epoch": 999,
+        "age": -1,
+        "is_fresh": false
+      }
+    ],
+    "passed": true
+  }
+]

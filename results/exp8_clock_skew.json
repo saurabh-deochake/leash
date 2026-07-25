@@ -1,0 +1,303 @@
+{
+  "skew_sweep": [
+    {
+      "skew_epochs": -5,
+      "skew_seconds": -50,
+      "accepted": false,
+      "reason": "future_heartbeat",
+      "hb_age_epochs": -5,
+      "regime": "Diverged"
+    },
+    {
+      "skew_epochs": -4,
+      "skew_seconds": -40,
+      "accepted": false,
+      "reason": "future_heartbeat",
+      "hb_age_epochs": -4,
+      "regime": "Diverged"
+    },
+    {
+      "skew_epochs": -3,
+      "skew_seconds": -30,
+      "accepted": false,
+      "reason": "future_heartbeat",
+      "hb_age_epochs": -3,
+      "regime": "Drifting"
+    },
+    {
+      "skew_epochs": -2,
+      "skew_seconds": -20,
+      "accepted": false,
+      "reason": "future_heartbeat",
+      "hb_age_epochs": -2,
+      "regime": "Drifting"
+    },
+    {
+      "skew_epochs": -1,
+      "skew_seconds": -10,
+      "accepted": false,
+      "reason": "future_heartbeat",
+      "hb_age_epochs": -1,
+      "regime": "Drifting"
+    },
+    {
+      "skew_epochs": 0,
+      "skew_seconds": 0,
+      "accepted": true,
+      "reason": "fresh",
+      "hb_age_epochs": 0,
+      "regime": "Synchronized"
+    },
+    {
+      "skew_epochs": 1,
+      "skew_seconds": 10,
+      "accepted": true,
+      "reason": "fresh",
+      "hb_age_epochs": 1,
+      "regime": "Drifting"
+    },
+    {
+      "skew_epochs": 2,
+      "skew_seconds": 20,
+      "accepted": true,
+      "reason": "fresh",
+      "hb_age_epochs": 2,
+      "regime": "Drifting"
+    },
+    {
+      "skew_epochs": 3,
+      "skew_seconds": 30,
+      "accepted": true,
+      "reason": "fresh",
+      "hb_age_epochs": 3,
+      "regime": "Drifting"
+    },
+    {
+      "skew_epochs": 4,
+      "skew_seconds": 40,
+      "accepted": false,
+      "reason": "stale",
+      "hb_age_epochs": 4,
+      "regime": "Diverged"
+    },
+    {
+      "skew_epochs": 5,
+      "skew_seconds": 50,
+      "accepted": false,
+      "reason": "stale",
+      "hb_age_epochs": 5,
+      "regime": "Diverged"
+    },
+    {
+      "skew_epochs": 6,
+      "skew_seconds": 60,
+      "accepted": false,
+      "reason": "stale",
+      "hb_age_epochs": 6,
+      "regime": "Diverged"
+    },
+    {
+      "skew_epochs": 7,
+      "skew_seconds": 70,
+      "accepted": false,
+      "reason": "stale",
+      "hb_age_epochs": 7,
+      "regime": "Diverged"
+    },
+    {
+      "skew_epochs": 8,
+      "skew_seconds": 80,
+      "accepted": false,
+      "reason": "stale",
+      "hb_age_epochs": 8,
+      "regime": "Diverged"
+    },
+    {
+      "skew_epochs": 9,
+      "skew_seconds": 90,
+      "accepted": false,
+      "reason": "stale",
+      "hb_age_epochs": 9,
+      "regime": "Diverged"
+    }
+  ],
+  "zombie_inflation": [
+    {
+      "skew_s": 0,
+      "measured_zombie_epochs": 4,
+      "measured_zombie_s": 40,
+      "theoretical_zombie_s": 40,
+      "within_bound": true
+    },
+    {
+      "skew_s": 5,
+      "measured_zombie_epochs": 4,
+      "measured_zombie_s": 40,
+      "theoretical_zombie_s": 45,
+      "within_bound": true
+    },
+    {
+      "skew_s": 10,
+      "measured_zombie_epochs": 5,
+      "measured_zombie_s": 50,
+      "theoretical_zombie_s": 50,
+      "within_bound": true
+    },
+    {
+      "skew_s": 15,
+      "measured_zombie_epochs": 5,
+      "measured_zombie_s": 50,
+      "theoretical_zombie_s": 55,
+      "within_bound": true
+    },
+    {
+      "skew_s": 20,
+      "measured_zombie_epochs": 6,
+      "measured_zombie_s": 60,
+      "theoretical_zombie_s": 60,
+      "within_bound": true
+    },
+    {
+      "skew_s": 30,
+      "measured_zombie_epochs": 7,
+      "measured_zombie_s": 70,
+      "theoretical_zombie_s": 70,
+      "within_bound": true
+    },
+    {
+      "skew_s": 35,
+      "measured_zombie_epochs": 7,
+      "measured_zombie_s": 70,
+      "theoretical_zombie_s": 75,
+      "within_bound": true
+    },
+    {
+      "skew_s": 45,
+      "measured_zombie_epochs": 8,
+      "measured_zombie_s": 80,
+      "theoretical_zombie_s": 85,
+      "within_bound": true
+    }
+  ],
+  "asymmetric_modes": [
+    {
+      "direction": "leads",
+      "skew_s": 0,
+      "zombie_s": 30,
+      "failure_mode": "fail-secure (early denial)"
+    },
+    {
+      "direction": "leads",
+      "skew_s": 10,
+      "zombie_s": 20,
+      "failure_mode": "fail-secure (early denial)"
+    },
+    {
+      "direction": "leads",
+      "skew_s": 20,
+      "zombie_s": 10,
+      "failure_mode": "fail-secure (early denial)"
+    },
+    {
+      "direction": "leads",
+      "skew_s": 30,
+      "zombie_s": 0,
+      "failure_mode": "fail-secure (early denial)"
+    },
+    {
+      "direction": "leads",
+      "skew_s": 40,
+      "zombie_s": 0,
+      "failure_mode": "fail-secure (early denial)"
+    },
+    {
+      "direction": "leads",
+      "skew_s": 50,
+      "zombie_s": 0,
+      "failure_mode": "fail-secure (early denial)"
+    },
+    {
+      "direction": "lags",
+      "skew_s": 0,
+      "zombie_s": 30,
+      "failure_mode": "safety-risk (late acceptance)"
+    },
+    {
+      "direction": "lags",
+      "skew_s": 10,
+      "zombie_s": 40,
+      "failure_mode": "safety-risk (late acceptance)"
+    },
+    {
+      "direction": "lags",
+      "skew_s": 20,
+      "zombie_s": 50,
+      "failure_mode": "safety-risk (late acceptance)"
+    },
+    {
+      "direction": "lags",
+      "skew_s": 30,
+      "zombie_s": 60,
+      "failure_mode": "safety-risk (late acceptance)"
+    },
+    {
+      "direction": "lags",
+      "skew_s": 40,
+      "zombie_s": 70,
+      "failure_mode": "safety-risk (late acceptance)"
+    },
+    {
+      "direction": "lags",
+      "skew_s": 50,
+      "zombie_s": 80,
+      "failure_mode": "safety-risk (late acceptance)"
+    }
+  ],
+  "boundary_detection": [
+    {
+      "verifier_epoch": 98,
+      "age": -2,
+      "accepted": false
+    },
+    {
+      "verifier_epoch": 99,
+      "age": -1,
+      "accepted": false
+    },
+    {
+      "verifier_epoch": 100,
+      "age": 0,
+      "accepted": true
+    },
+    {
+      "verifier_epoch": 101,
+      "age": 1,
+      "accepted": true
+    },
+    {
+      "verifier_epoch": 102,
+      "age": 2,
+      "accepted": true
+    },
+    {
+      "verifier_epoch": 103,
+      "age": 3,
+      "accepted": true
+    },
+    {
+      "verifier_epoch": 104,
+      "age": 4,
+      "accepted": false
+    },
+    {
+      "verifier_epoch": 105,
+      "age": 5,
+      "accepted": false
+    },
+    {
+      "verifier_epoch": 106,
+      "age": 6,
+      "accepted": false
+    }
+  ]
+}

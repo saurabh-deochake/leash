@@ -1,0 +1,94 @@
+{
+  "experiment": "exp22_fullchain_depth",
+  "description": "Full-chain (O(d)) vs immediate-parent (O(1)) verification cost by hierarchy depth, measuring the COMPLETE VerifyAuth path (beacon + credential-issuer + possession verifies, binding hash). Network cost is zero round-trips in both modes; only local compute differs.",
+  "primitives": "ECDSA-secp256k1 heartbeat signatures",
+  "curve": "secp256k1",
+  "results": [
+    {
+      "depth": 1,
+      "immediate_verify_ms": 7.8969,
+      "fullchain_verify_ms": 7.8962,
+      "fullchain_verify_p99_ms": 8.3275,
+      "immediate_proof_bytes": 168,
+      "fullchain_proof_bytes": 168,
+      "immediate_ecdsa_verifies": 3,
+      "fullchain_ecdsa_verifies": 3
+    },
+    {
+      "depth": 2,
+      "immediate_verify_ms": 7.8044,
+      "fullchain_verify_ms": 10.4782,
+      "fullchain_verify_p99_ms": 11.1462,
+      "immediate_proof_bytes": 168,
+      "fullchain_proof_bytes": 336,
+      "immediate_ecdsa_verifies": 3,
+      "fullchain_ecdsa_verifies": 4
+    },
+    {
+      "depth": 3,
+      "immediate_verify_ms": 8.069,
+      "fullchain_verify_ms": 13.4775,
+      "fullchain_verify_p99_ms": 14.2276,
+      "immediate_proof_bytes": 168,
+      "fullchain_proof_bytes": 504,
+      "immediate_ecdsa_verifies": 3,
+      "fullchain_ecdsa_verifies": 5
+    },
+    {
+      "depth": 4,
+      "immediate_verify_ms": 7.9266,
+      "fullchain_verify_ms": 16.2379,
+      "fullchain_verify_p99_ms": 18.7011,
+      "immediate_proof_bytes": 168,
+      "fullchain_proof_bytes": 672,
+      "immediate_ecdsa_verifies": 3,
+      "fullchain_ecdsa_verifies": 6
+    },
+    {
+      "depth": 5,
+      "immediate_verify_ms": 7.9157,
+      "fullchain_verify_ms": 18.4179,
+      "fullchain_verify_p99_ms": 19.089,
+      "immediate_proof_bytes": 168,
+      "fullchain_proof_bytes": 840,
+      "immediate_ecdsa_verifies": 3,
+      "fullchain_ecdsa_verifies": 7
+    },
+    {
+      "depth": 6,
+      "immediate_verify_ms": 7.8638,
+      "fullchain_verify_ms": 21.0747,
+      "fullchain_verify_p99_ms": 21.4648,
+      "immediate_proof_bytes": 168,
+      "fullchain_proof_bytes": 1008,
+      "immediate_ecdsa_verifies": 3,
+      "fullchain_ecdsa_verifies": 8
+    },
+    {
+      "depth": 7,
+      "immediate_verify_ms": 7.7952,
+      "fullchain_verify_ms": 23.5357,
+      "fullchain_verify_p99_ms": 24.1333,
+      "immediate_proof_bytes": 168,
+      "fullchain_proof_bytes": 1176,
+      "immediate_ecdsa_verifies": 3,
+      "fullchain_ecdsa_verifies": 9
+    },
+    {
+      "depth": 8,
+      "immediate_verify_ms": 7.9191,
+      "fullchain_verify_ms": 26.2145,
+      "fullchain_verify_p99_ms": 26.6228,
+      "immediate_proof_bytes": 168,
+      "fullchain_proof_bytes": 1344,
+      "immediate_ecdsa_verifies": 3,
+      "fullchain_ecdsa_verifies": 10
+    }
+  ],
+  "fullchain_scaling_d8_over_d1": 3.32,
+  "notes": {
+    "immediate_parent": "O(1) compute; cascade latency ~ d*W_max; assumes honest-but-halted intermediates (zombie threat).",
+    "full_chain": "O(d) compute; cascade latency ~ W_max at every level; defends compromised intermediates (assume-breach).",
+    "network": "Both modes require ZERO network round-trips to verify."
+  }
+}

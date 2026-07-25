@@ -1,0 +1,89 @@
+{
+  "experiment": "exp13_multi_framework",
+  "model": "gpt-4o-mini-2024-07-18",
+  "iterations_per_framework": 3,
+  "timestamp": 1775504837.239251,
+  "frameworks": [
+    {
+      "framework": "LangChain-style",
+      "integration_loc": 18,
+      "baseline": {
+        "framework": "LangChain-style",
+        "leash": false,
+        "integration_loc": 18,
+        "iterations": 3,
+        "mean_ms": 4268.0,
+        "stdev_ms": 7043.2,
+        "p99_ms": 12400.4,
+        "errors": 0,
+        "revocation_correct": "N/A"
+      },
+      "leash": {
+        "framework": "LangChain-style",
+        "leash": true,
+        "integration_loc": 18,
+        "iterations": 3,
+        "mean_ms": 187.8,
+        "stdev_ms": 43.2,
+        "p99_ms": 236.5,
+        "errors": 0,
+        "revocation_correct": true
+      },
+      "overhead_pct": -95.6
+    },
+    {
+      "framework": "CrewAI-style",
+      "integration_loc": 16,
+      "baseline": {
+        "framework": "CrewAI-style",
+        "leash": false,
+        "integration_loc": 16,
+        "iterations": 3,
+        "mean_ms": 2650.4,
+        "stdev_ms": 4223.0,
+        "p99_ms": 7526.6,
+        "errors": 0,
+        "revocation_correct": "N/A"
+      },
+      "leash": {
+        "framework": "CrewAI-style",
+        "leash": true,
+        "integration_loc": 16,
+        "iterations": 3,
+        "mean_ms": 193.0,
+        "stdev_ms": 47.5,
+        "p99_ms": 247.5,
+        "errors": 0,
+        "revocation_correct": true
+      },
+      "overhead_pct": -92.718
+    },
+    {
+      "framework": "OpenAI-SDK-style",
+      "integration_loc": 14,
+      "baseline": {
+        "framework": "OpenAI-SDK-style",
+        "leash": false,
+        "integration_loc": 14,
+        "iterations": 3,
+        "mean_ms": 1373.5,
+        "stdev_ms": 1953.0,
+        "p99_ms": 3628.0,
+        "errors": 0,
+        "revocation_correct": "N/A"
+      },
+      "leash": {
+        "framework": "OpenAI-SDK-style",
+        "leash": true,
+        "integration_loc": 14,
+        "iterations": 3,
+        "mean_ms": 267.6,
+        "stdev_ms": 13.8,
+        "p99_ms": 276.1,
+        "errors": 0,
+        "revocation_correct": true
+      },
+      "overhead_pct": -80.517
+    }
+  ]
+}

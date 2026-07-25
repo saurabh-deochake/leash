@@ -1,0 +1,42 @@
+[
+  {
+    "n": 10,
+    "verify_mean_ms": 0.21,
+    "verify_p99_ms": 0.235,
+    "throughput_vps": 4765.0,
+    "all_revoked": true,
+    "revoked_count": 10
+  },
+  {
+    "n": 50,
+    "verify_mean_ms": 0.207,
+    "verify_p99_ms": 0.235,
+    "throughput_vps": 4840.0,
+    "all_revoked": true,
+    "revoked_count": 50
+  },
+  {
+    "n": 100,
+    "verify_mean_ms": 0.216,
+    "verify_p99_ms": 0.263,
+    "throughput_vps": 4630.0,
+    "all_revoked": true,
+    "revoked_count": 100
+  },
+  {
+    "n": 500,
+    "verify_mean_ms": 0.209,
+    "verify_p99_ms": 0.248,
+    "throughput_vps": 4790.0,
+    "all_revoked": true,
+    "revoked_count": 500
+  },
+  {
+    "n": 1000,
+    "verify_mean_ms": 0.208,
+    "verify_p99_ms": 0.24,
+    "throughput_vps": 4796.0,
+    "all_revoked": true,
+    "revoked_count": 1000
+  }
+]

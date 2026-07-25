@@ -1,0 +1,89 @@
+{
+  "test1_sanity": {
+    "clock_based": {
+      "valid": true,
+      "error": null
+    },
+    "sequence_based": {
+      "valid": true,
+      "error": null,
+      "seq": 1
+    },
+    "passed": true
+  },
+  "test2_clock_drift": {
+    "clock_based": {
+      "valid": false,
+      "error": "Heartbeat expired: epoch 177595596 is too old (current: 177595601, max age: 3)",
+      "verifier_epoch": 177595601,
+      "heartbeat_epoch": 177595596,
+      "age_epochs": 5
+    },
+    "sequence_based_true_clock": {
+      "valid": true,
+      "error": null,
+      "seq": 1
+    },
+    "sequence_based_drifted_clock": {
+      "valid": false,
+      "error": "Heartbeat expired: epoch 177595596 is too old (current: 177595601, max age: 3)",
+      "seq": 1,
+      "note": "Clock check still runs \u2014 sequence is additive, not a replacement. A pure sequence-only mode would accept this."
+    },
+    "passed": true,
+    "interpretation": "Clock-based correctly rejects under drift. Sequence-based correctly accepts at true time. Current design layers both checks; a future sequence-only mode would maintain correctness when clocks diverge beyond W_max."
+  },
+  "test3_revocation_gap": {
+    "attempts": [
+      {
+        "description": "Replay seq=5 (same as last seen)",
+        "seq": 5,
+        "valid": false,
+        "error": "Sequence regression: 5 <= last seen 5"
+      },
+      {
+        "description": "seq=6 (gap=1, within k=3)",
+        "seq": 6,
+        "valid": true,
+        "error": null
+      },
+      {
+        "description": "seq=10 (gap=4, exceeds k=3)",
+        "seq": 10,
+        "valid": false,
+        "error": "Sequence gap too large: 10 - 6 = 4 > 3"
+      }
+    ],
+    "zombie_window_sequences": 3,
+    "zombie_window_seconds": 30,
+    "passed": true
+  },
+  "test4_regression_attack": {
+    "accept_seq_3": true,
+    "reject_seq_1": true,
+    "reject_seq_2": true,
+    "reject_seq_3_replay": true,
+    "passed": true
+  },
+  "test5_boundary": {
+    "gap_k_minus_1": {
+      "seq": 12,
+      "gap": 2,
+      "valid": true,
+      "expected": true
+    },
+    "gap_k": {
+      "seq": 15,
+      "gap": 3,
+      "valid": true,
+      "expected": true
+    },
+    "gap_k_plus_1": {
+      "seq": 19,
+      "gap": 4,
+      "valid": false,
+      "expected": false
+    },
+    "passed": true
+  }
+}

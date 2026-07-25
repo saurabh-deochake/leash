@@ -1,0 +1,47 @@
+{
+  "parent_throughput": [
+    {
+      "swarm_size": 5000,
+      "derivation_total_ms": 6580.62,
+      "derivation_per_child_ms": 1.316,
+      "hb_gen_mean_ms": 0.671,
+      "hb_gen_p99_ms": 0.782
+    },
+    {
+      "swarm_size": 10000,
+      "derivation_total_ms": 13070.94,
+      "derivation_per_child_ms": 1.307,
+      "hb_gen_mean_ms": 0.692,
+      "hb_gen_p99_ms": 0.846
+    }
+  ],
+  "concurrent_verification": [
+    {
+      "swarm_size": 5000,
+      "verify_mean_ms": 5.293,
+      "verify_p99_ms": 5.936,
+      "verify_std_ms": 0.331,
+      "total_burst_ms": 26465.74,
+      "throughput_verifications_per_sec": 188.9
+    },
+    {
+      "swarm_size": 10000,
+      "verify_mean_ms": 2.559,
+      "verify_p99_ms": 5.662,
+      "verify_std_ms": 2.643,
+      "total_burst_ms": 25596.19,
+      "throughput_verifications_per_sec": 390.7
+    }
+  ],
+  "revocation_propagation": [
+    {
+      "swarm_size": 5000,
+      "initial_authenticated": 1252,
+      "denied_after_expiry": 5000,
+      "all_denied": true,
+      "elapsed_s": 12.46,
+      "check_all_ms": 3451.01,
+      "passed": true
+    }
+  ]
+}

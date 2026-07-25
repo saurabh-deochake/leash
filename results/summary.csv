@@ -1,0 +1,9 @@
+scenario,delay,jitter,loss,concurrency,rps,mean_ms,p50_ms,p99_ms,failed
+baseline,0ms,0ms,0%,100,13142.64,7.609,6,44,484
+same-region,1ms,0.5ms,0%,100,11565.32,8.647,8,20,441
+cross-region,50ms,10ms,0.1%,100,954.22,104.798,101,133,4566
+cross-continent,150ms,30ms,0.5%,100,312.60,319.900,302,681,4398
+degraded-wan,200ms,50ms,2%,100,218.13,458.450,404,1449,985
+cross-region-c500,50ms,10ms,0.1%,500,2313.53,216.119,102,1372,4993
+cross-continent-c500,150ms,30ms,0.5%,500,920.99,542.892,307,1884,468
+partition-recovery,5s-100%,0ms,100%->0%,100,15007.29,6.663,,,895

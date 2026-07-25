@@ -1,0 +1,57 @@
+This is ApacheBench, Version 2.3 <$Revision: 1923142 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking leash-server (be patient)
+Completed 500 requests
+Completed 1000 requests
+Completed 1500 requests
+Completed 2000 requests
+Completed 2500 requests
+Completed 3000 requests
+Completed 3500 requests
+Completed 4000 requests
+Completed 4500 requests
+Completed 5000 requests
+Finished 5000 requests
+
+
+Server Software:        
+Server Hostname:        leash-server
+Server Port:            18924
+
+Document Path:          /verify
+Document Length:        34 bytes
+
+Concurrency Level:      100
+Time taken for tests:   22.923 seconds
+Complete requests:      5000
+Failed requests:        985
+   (Connect: 0, Receive: 0, Length: 985, Exceptions: 0)
+Total transferred:      710259 bytes
+Total body sent:        715000
+HTML transferred:       170259 bytes
+Requests per second:    218.13 [#/sec] (mean)
+Time per request:       458.450 [ms] (mean)
+Time per request:       4.585 [ms] (mean, across all concurrent requests)
+Transfer rate:          30.26 [Kbytes/sec] received
+                        30.46 kb/s sent
+                        60.72 kb/s total
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0  222 162.2    202    3332
+Processing:     1  214 106.5    203    1682
+Waiting:        1  214 106.5    203    1682
+Total:        157  436 192.9    404    3448
+
+Percentage of the requests served within a certain time (ms)
+  50%    404
+  66%    436
+  75%    456
+  80%    470
+  90%    510
+  95%    569
+  98%   1356
+  99%   1449
+ 100%   3448 (longest request)

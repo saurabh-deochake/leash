@@ -1,0 +1,196 @@
+{
+  "drop_rates": [
+    {
+      "drop_rate": 0.0,
+      "num_epochs": 100,
+      "num_children": 100,
+      "precompute_buffer": 0,
+      "total_auth_attempts": 10000,
+      "false_denials": 0,
+      "fprr": 0.0,
+      "fprr_pct": 0.0,
+      "max_consecutive_drops_mean": 0,
+      "max_consecutive_drops_max": 0
+    },
+    {
+      "drop_rate": 0.01,
+      "num_epochs": 100,
+      "num_children": 100,
+      "precompute_buffer": 0,
+      "total_auth_attempts": 10000,
+      "false_denials": 1,
+      "fprr": 0.0001,
+      "fprr_pct": 0.01,
+      "max_consecutive_drops_mean": 0.68,
+      "max_consecutive_drops_max": 1
+    },
+    {
+      "drop_rate": 0.05,
+      "num_epochs": 100,
+      "num_children": 100,
+      "precompute_buffer": 0,
+      "total_auth_attempts": 10000,
+      "false_denials": 7,
+      "fprr": 0.0007,
+      "fprr_pct": 0.07,
+      "max_consecutive_drops_mean": 1.13,
+      "max_consecutive_drops_max": 3
+    },
+    {
+      "drop_rate": 0.1,
+      "num_epochs": 100,
+      "num_children": 100,
+      "precompute_buffer": 0,
+      "total_auth_attempts": 10000,
+      "false_denials": 15,
+      "fprr": 0.0015,
+      "fprr_pct": 0.15,
+      "max_consecutive_drops_mean": 1.69,
+      "max_consecutive_drops_max": 4
+    },
+    {
+      "drop_rate": 0.2,
+      "num_epochs": 100,
+      "num_children": 100,
+      "precompute_buffer": 0,
+      "total_auth_attempts": 10000,
+      "false_denials": 39,
+      "fprr": 0.0039,
+      "fprr_pct": 0.39,
+      "max_consecutive_drops_mean": 2.52,
+      "max_consecutive_drops_max": 6
+    },
+    {
+      "drop_rate": 0.3,
+      "num_epochs": 100,
+      "num_children": 100,
+      "precompute_buffer": 0,
+      "total_auth_attempts": 10000,
+      "false_denials": 124,
+      "fprr": 0.0124,
+      "fprr_pct": 1.24,
+      "max_consecutive_drops_mean": 3.45,
+      "max_consecutive_drops_max": 6
+    }
+  ],
+  "precomputation": [
+    {
+      "drop_rate": 0.1,
+      "num_epochs": 100,
+      "num_children": 100,
+      "precompute_buffer": 0,
+      "total_auth_attempts": 10000,
+      "false_denials": 15,
+      "fprr": 0.0015,
+      "fprr_pct": 0.15,
+      "max_consecutive_drops_mean": 1.69,
+      "max_consecutive_drops_max": 4
+    },
+    {
+      "drop_rate": 0.1,
+      "num_epochs": 100,
+      "num_children": 100,
+      "precompute_buffer": 3,
+      "total_auth_attempts": 10000,
+      "false_denials": 1,
+      "fprr": 0.0001,
+      "fprr_pct": 0.01,
+      "max_consecutive_drops_mean": 1.69,
+      "max_consecutive_drops_max": 4
+    },
+    {
+      "drop_rate": 0.1,
+      "num_epochs": 100,
+      "num_children": 100,
+      "precompute_buffer": 6,
+      "total_auth_attempts": 10000,
+      "false_denials": 1,
+      "fprr": 0.0001,
+      "fprr_pct": 0.01,
+      "max_consecutive_drops_mean": 1.69,
+      "max_consecutive_drops_max": 4
+    },
+    {
+      "drop_rate": 0.1,
+      "num_epochs": 100,
+      "num_children": 100,
+      "precompute_buffer": 10,
+      "total_auth_attempts": 10000,
+      "false_denials": 1,
+      "fprr": 0.0001,
+      "fprr_pct": 0.01,
+      "max_consecutive_drops_mean": 1.69,
+      "max_consecutive_drops_max": 4
+    },
+    {
+      "drop_rate": 0.1,
+      "num_epochs": 100,
+      "num_children": 100,
+      "precompute_buffer": 20,
+      "total_auth_attempts": 10000,
+      "false_denials": 1,
+      "fprr": 0.0001,
+      "fprr_pct": 0.01,
+      "max_consecutive_drops_mean": 1.69,
+      "max_consecutive_drops_max": 4
+    }
+  ],
+  "multi_path": [
+    {
+      "single_path_drop": 0.01,
+      "dual_path_effective_drop": 0.0001,
+      "single_fprr_pct": 0.01,
+      "dual_fprr_pct": 0.0
+    },
+    {
+      "single_path_drop": 0.05,
+      "dual_path_effective_drop": 0.0025000000000000005,
+      "single_fprr_pct": 0.07,
+      "dual_fprr_pct": 0.0
+    },
+    {
+      "single_path_drop": 0.1,
+      "dual_path_effective_drop": 0.010000000000000002,
+      "single_fprr_pct": 0.15,
+      "dual_fprr_pct": 0.01
+    },
+    {
+      "single_path_drop": 0.2,
+      "dual_path_effective_drop": 0.04000000000000001,
+      "single_fprr_pct": 0.39,
+      "dual_fprr_pct": 0.05
+    }
+  ],
+  "wmax_sensitivity": [
+    {
+      "wmax": 10,
+      "max_age_epochs": 1,
+      "fprr_pct": 1.11,
+      "zombie_window_s": 20
+    },
+    {
+      "wmax": 20,
+      "max_age_epochs": 2,
+      "fprr_pct": 0.24,
+      "zombie_window_s": 30
+    },
+    {
+      "wmax": 30,
+      "max_age_epochs": 3,
+      "fprr_pct": 0.15,
+      "zombie_window_s": 40
+    },
+    {
+      "wmax": 60,
+      "max_age_epochs": 6,
+      "fprr_pct": 0.14,
+      "zombie_window_s": 70
+    },
+    {
+      "wmax": 120,
+      "max_age_epochs": 12,
+      "fprr_pct": 0.14,
+      "zombie_window_s": 130
+    }
+  ]
+}

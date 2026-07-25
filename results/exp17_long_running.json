@@ -1,0 +1,61 @@
+{
+  "experiment": "exp17_long_running",
+  "model": "gpt-4o-mini-2024-07-18",
+  "duration_s": 300,
+  "timestamp": 1775505545.2719302,
+  "config": {
+    "heartbeat_interval_secs": 10,
+    "max_heartbeat_age_secs": 30,
+    "num_workers": 5
+  },
+  "stability": {
+    "pre_revoke_auth_success_mean_pct": 100.0,
+    "pre_revoke_auth_success_min_pct": 100.0,
+    "false_positive_rate_pct": 0.0,
+    "auth_lat_p99_mean_ms": 87.997,
+    "auth_lat_p99_max_ms": 94.63,
+    "memory_growth_mb": 0
+  },
+  "snapshots": [
+    {
+      "elapsed_s": 60.3,
+      "elapsed_min": 1.0,
+      "calls": 100,
+      "ok_pct": 100.0,
+      "denied": 0,
+      "false_denials": 0,
+      "lat_p99_ms": 94.63,
+      "rss_mb": 0
+    },
+    {
+      "elapsed_s": 120.5,
+      "elapsed_min": 2.0,
+      "calls": 100,
+      "ok_pct": 100.0,
+      "denied": 0,
+      "false_denials": 0,
+      "lat_p99_ms": 93.44,
+      "rss_mb": 0
+    },
+    {
+      "elapsed_s": 180.7,
+      "elapsed_min": 3.0,
+      "calls": 100,
+      "ok_pct": 100.0,
+      "denied": 0,
+      "false_denials": 0,
+      "lat_p99_ms": 75.92,
+      "rss_mb": 0
+    },
+    {
+      "elapsed_s": 240.9,
+      "elapsed_min": 4.0,
+      "calls": 100,
+      "ok_pct": 100.0,
+      "denied": 0,
+      "false_denials": 0,
+      "lat_p99_ms": 50.69,
+      "rss_mb": 0
+    }
+  ]
+}

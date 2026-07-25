@@ -1,0 +1,4149 @@
+{
+  "experiment": "exp12_zombie_demo",
+  "model": "gpt-4o-mini-2024-07-18",
+  "timestamp": 1775504627.621166,
+  "oauth": {
+    "scenario": "oauth_bearer",
+    "t_kill": 1775504528.050509,
+    "total_calls": 213,
+    "calls_after_kill": 175,
+    "last_success_offset_s": 44.68,
+    "zombie_window_s": 44.68
+  },
+  "leash": {
+    "scenario": "leash",
+    "config": {
+      "heartbeat_interval_secs": 5,
+      "max_heartbeat_age_secs": 15
+    },
+    "t_kill": 1775504582.611145,
+    "total_calls": 198,
+    "calls_after_kill": 48,
+    "last_success_offset_s": 11.91,
+    "zombie_window_s": 11.91,
+    "expected_zombie_bound_s": 20,
+    "within_bound": true
+  },
+  "comparison": {
+    "oauth_calls_after_kill": 175,
+    "leash_calls_after_kill": 48,
+    "oauth_zombie_s": 44.68,
+    "leash_zombie_s": 11.91,
+    "reduction_factor": 3.8,
+    "leash_within_bound": true
+  },
+  "oauth_audit": [
+    {
+      "timestamp": 1775504518.546537,
+      "agent_id": "CodeWriter",
+      "tool": "write_file",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 16.9375,
+      "total_latency_ms": 16.9448,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504518.5468931,
+      "agent_id": "CodeReviewer",
+      "tool": "read_file",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 16.439,
+      "total_latency_ms": 16.4402,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504518.557375,
+      "agent_id": "SQLAgent",
+      "tool": "query_db",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 26.5805,
+      "total_latency_ms": 26.5823,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504518.55752,
+      "agent_id": "CodeAnalyzer",
+      "tool": "read_file",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 28.0344,
+      "total_latency_ms": 28.0368,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504518.58708,
+      "agent_id": "DeployAgent",
+      "tool": "run_command",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 53.5863,
+      "total_latency_ms": 53.6008,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504520.052713,
+      "agent_id": "CodeWriter",
+      "tool": "write_file",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 0.8281,
+      "total_latency_ms": 0.8375,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504520.059099,
+      "agent_id": "CodeAnalyzer",
+      "tool": "read_file",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 0.3799,
+      "total_latency_ms": 0.3825,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504520.0622568,
+      "agent_id": "SQLAgent",
+      "tool": "query_db",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 0.5537,
+      "total_latency_ms": 0.556,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504520.109458,
+      "agent_id": "DeployAgent",
+      "tool": "run_command",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 21.442,
+      "total_latency_ms": 21.4446,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504520.828086,
+      "agent_id": "CodeReviewer",
+      "tool": "review_code",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 2281.1109,
+      "total_latency_ms": 2281.1267,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504521.558313,
+      "agent_id": "CodeWriter",
+      "tool": "write_file",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 0.4803,
+      "total_latency_ms": 0.4868,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504521.562902,
+      "agent_id": "CodeAnalyzer",
+      "tool": "read_file",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 0.2695,
+      "total_latency_ms": 0.2706,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504521.567735,
+      "agent_id": "SQLAgent",
+      "tool": "query_db",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 0.4327,
+      "total_latency_ms": 0.4336,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504521.621529,
+      "agent_id": "DeployAgent",
+      "tool": "run_command",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 6.9628,
+      "total_latency_ms": 6.9643,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504522.333687,
+      "agent_id": "CodeReviewer",
+      "tool": "read_file",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 0.4596,
+      "total_latency_ms": 0.4684,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504522.4122229,
+      "agent_id": "CodeReviewer",
+      "tool": "review_code",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 78.519,
+      "total_latency_ms": 78.5203,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504523.064972,
+      "agent_id": "CodeWriter",
+      "tool": "write_file",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 1.5003,
+      "total_latency_ms": 1.5057,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504523.068506,
+      "agent_id": "CodeAnalyzer",
+      "tool": "read_file",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 0.5395,
+      "total_latency_ms": 0.542,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504523.0736902,
+      "agent_id": "SQLAgent",
+      "tool": "query_db",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 0.9008,
+      "total_latency_ms": 0.9029,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504523.136619,
+      "agent_id": "DeployAgent",
+      "tool": "run_command",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 12.2673,
+      "total_latency_ms": 12.2702,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504523.918566,
+      "agent_id": "CodeReviewer",
+      "tool": "read_file",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 1.1155,
+      "total_latency_ms": 1.1281,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504524.147244,
+      "agent_id": "CodeReviewer",
+      "tool": "review_code",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 228.6541,
+      "total_latency_ms": 228.6564,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504524.570796,
+      "agent_id": "CodeWriter",
+      "tool": "write_file",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 1.1295,
+      "total_latency_ms": 1.134,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504524.5736792,
+      "agent_id": "CodeAnalyzer",
+      "tool": "read_file",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 0.5072,
+      "total_latency_ms": 0.5094,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504524.577974,
+      "agent_id": "SQLAgent",
+      "tool": "query_db",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 0.8538,
+      "total_latency_ms": 0.8565,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504524.65026,
+      "agent_id": "DeployAgent",
+      "tool": "run_command",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 12.146,
+      "total_latency_ms": 12.1501,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504525.649377,
+      "agent_id": "CodeReviewer",
+      "tool": "read_file",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 0.3781,
+      "total_latency_ms": 0.3841,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504525.775378,
+      "agent_id": "CodeReviewer",
+      "tool": "review_code",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 125.9876,
+      "total_latency_ms": 125.9892,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504526.074933,
+      "agent_id": "CodeWriter",
+      "tool": "write_file",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 1.5738,
+      "total_latency_ms": 1.581,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504526.0790951,
+      "agent_id": "CodeAnalyzer",
+      "tool": "read_file",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 0.5939,
+      "total_latency_ms": 0.5972,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504526.081213,
+      "agent_id": "SQLAgent",
+      "tool": "query_db",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 0.9027,
+      "total_latency_ms": 0.9055,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504526.2039092,
+      "agent_id": "DeployAgent",
+      "tool": "run_command",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 49.4732,
+      "total_latency_ms": 49.4753,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504527.281493,
+      "agent_id": "CodeReviewer",
+      "tool": "read_file",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 0.9032,
+      "total_latency_ms": 0.9206,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504527.4086149,
+      "agent_id": "CodeReviewer",
+      "tool": "review_code",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 127.0918,
+      "total_latency_ms": 127.0946,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504527.5794392,
+      "agent_id": "CodeWriter",
+      "tool": "write_file",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 0.443,
+      "total_latency_ms": 0.4447,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504527.583406,
+      "agent_id": "CodeAnalyzer",
+      "tool": "read_file",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 0.2286,
+      "total_latency_ms": 0.2294,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504527.584752,
+      "agent_id": "SQLAgent",
+      "tool": "query_db",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 0.4587,
+      "total_latency_ms": 0.4598,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504527.774464,
+      "agent_id": "DeployAgent",
+      "tool": "run_command",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 70.4099,
+      "total_latency_ms": 70.4118,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504528.913744,
+      "agent_id": "CodeReviewer",
+      "tool": "read_file",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 0.7452,
+      "total_latency_ms": 0.7546,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504528.983685,
+      "agent_id": "CodeReviewer",
+      "tool": "review_code",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 69.9248,
+      "total_latency_ms": 69.9269,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504529.086528,
+      "agent_id": "CodeAnalyzer",
+      "tool": "read_file",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 1.9395,
+      "total_latency_ms": 1.9447,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504529.086956,
+      "agent_id": "CodeWriter",
+      "tool": "write_file",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 2.2493,
+      "total_latency_ms": 2.252,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504529.090797,
+      "agent_id": "SQLAgent",
+      "tool": "query_db",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 0.9872,
+      "total_latency_ms": 0.9896,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504529.2882922,
+      "agent_id": "DeployAgent",
+      "tool": "run_command",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 8.726,
+      "total_latency_ms": 8.7282,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504530.488298,
+      "agent_id": "CodeReviewer",
+      "tool": "read_file",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 0.4076,
+      "total_latency_ms": 0.4141,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504530.553119,
+      "agent_id": "CodeReviewer",
+      "tool": "review_code",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 64.8075,
+      "total_latency_ms": 64.8088,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504530.587435,
+      "agent_id": "CodeAnalyzer",
+      "tool": "read_file",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 0.4614,
+      "total_latency_ms": 0.4658,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504530.5902379,
+      "agent_id": "CodeWriter",
+      "tool": "write_file",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 0.4609,
+      "total_latency_ms": 0.4613,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504530.5926762,
+      "agent_id": "SQLAgent",
+      "tool": "query_db",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 0.5138,
+      "total_latency_ms": 0.5144,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504530.805281,
+      "agent_id": "DeployAgent",
+      "tool": "run_command",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 11.8074,
+      "total_latency_ms": 11.8102,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504532.0553448,
+      "agent_id": "CodeReviewer",
+      "tool": "read_file",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 0.8115,
+      "total_latency_ms": 0.8267,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504532.09316,
+      "agent_id": "CodeAnalyzer",
+      "tool": "read_file",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 0.6651,
+      "total_latency_ms": 0.6667,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504532.0933561,
+      "agent_id": "CodeWriter",
+      "tool": "write_file",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 0.8058,
+      "total_latency_ms": 0.807,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504532.098206,
+      "agent_id": "SQLAgent",
+      "tool": "query_db",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 0.4907,
+      "total_latency_ms": 0.4917,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504532.2010791,
+      "agent_id": "CodeReviewer",
+      "tool": "review_code",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 145.7094,
+      "total_latency_ms": 145.7116,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504532.318054,
+      "agent_id": "DeployAgent",
+      "tool": "run_command",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 7.6538,
+      "total_latency_ms": 7.6557,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504533.599149,
+      "agent_id": "CodeAnalyzer",
+      "tool": "read_file",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 0.7968,
+      "total_latency_ms": 0.8068,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504533.599303,
+      "agent_id": "CodeWriter",
+      "tool": "write_file",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 0.8295,
+      "total_latency_ms": 0.8303,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504533.6037939,
+      "agent_id": "SQLAgent",
+      "tool": "query_db",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 0.5482,
+      "total_latency_ms": 0.5536,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504533.704364,
+      "agent_id": "CodeReviewer",
+      "tool": "read_file",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 0.9693,
+      "total_latency_ms": 0.9739,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504533.7789912,
+      "agent_id": "CodeReviewer",
+      "tool": "review_code",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 74.603,
+      "total_latency_ms": 74.6058,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504533.883046,
+      "agent_id": "DeployAgent",
+      "tool": "run_command",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 60.1324,
+      "total_latency_ms": 60.134,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504535.1056352,
+      "agent_id": "CodeAnalyzer",
+      "tool": "read_file",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 1.1895,
+      "total_latency_ms": 1.2043,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504535.105976,
+      "agent_id": "CodeWriter",
+      "tool": "write_file",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 1.413,
+      "total_latency_ms": 1.4162,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504535.1104488,
+      "agent_id": "SQLAgent",
+      "tool": "query_db",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 1.5701,
+      "total_latency_ms": 1.5768,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504535.2850099,
+      "agent_id": "CodeReviewer",
+      "tool": "read_file",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 0.8865,
+      "total_latency_ms": 0.8916,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504535.3743842,
+      "agent_id": "CodeReviewer",
+      "tool": "review_code",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 89.3443,
+      "total_latency_ms": 89.3478,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504535.400141,
+      "agent_id": "DeployAgent",
+      "tool": "run_command",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 13.595,
+      "total_latency_ms": 13.5989,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504536.6070158,
+      "agent_id": "CodeAnalyzer",
+      "tool": "read_file",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 0.3455,
+      "total_latency_ms": 0.3533,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504536.610048,
+      "agent_id": "CodeWriter",
+      "tool": "write_file",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 0.3367,
+      "total_latency_ms": 0.338,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504536.614369,
+      "agent_id": "SQLAgent",
+      "tool": "query_db",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 0.4105,
+      "total_latency_ms": 0.4119,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504536.874965,
+      "agent_id": "CodeReviewer",
+      "tool": "read_file",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 0.4513,
+      "total_latency_ms": 0.4537,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504536.91098,
+      "agent_id": "DeployAgent",
+      "tool": "run_command",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 7.9894,
+      "total_latency_ms": 7.9923,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504536.940535,
+      "agent_id": "CodeReviewer",
+      "tool": "review_code",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 65.56,
+      "total_latency_ms": 65.5612,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504538.11181,
+      "agent_id": "CodeAnalyzer",
+      "tool": "read_file",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 0.3011,
+      "total_latency_ms": 0.3039,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504538.1118348,
+      "agent_id": "CodeWriter",
+      "tool": "write_file",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 0.5116,
+      "total_latency_ms": 0.5192,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504538.1184971,
+      "agent_id": "SQLAgent",
+      "tool": "query_db",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 0.4904,
+      "total_latency_ms": 0.4925,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504538.420602,
+      "agent_id": "DeployAgent",
+      "tool": "run_command",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 8.9316,
+      "total_latency_ms": 8.9343,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504538.445188,
+      "agent_id": "CodeReviewer",
+      "tool": "read_file",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 0.5144,
+      "total_latency_ms": 0.521,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504538.5162182,
+      "agent_id": "CodeReviewer",
+      "tool": "review_code",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 71.0196,
+      "total_latency_ms": 71.021,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504539.615874,
+      "agent_id": "CodeWriter",
+      "tool": "write_file",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 1.2497,
+      "total_latency_ms": 1.2565,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504539.617255,
+      "agent_id": "CodeAnalyzer",
+      "tool": "read_file",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 0.3735,
+      "total_latency_ms": 0.3755,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504539.624525,
+      "agent_id": "SQLAgent",
+      "tool": "query_db",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 0.9622,
+      "total_latency_ms": 0.9665,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504539.937278,
+      "agent_id": "DeployAgent",
+      "tool": "run_command",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 12.81,
+      "total_latency_ms": 12.8143,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504540.020689,
+      "agent_id": "CodeReviewer",
+      "tool": "read_file",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 0.3724,
+      "total_latency_ms": 0.3789,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504540.135745,
+      "agent_id": "CodeReviewer",
+      "tool": "review_code",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 115.0443,
+      "total_latency_ms": 115.0455,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504541.121196,
+      "agent_id": "CodeAnalyzer",
+      "tool": "read_file",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 1.0092,
+      "total_latency_ms": 1.0132,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504541.12159,
+      "agent_id": "CodeWriter",
+      "tool": "write_file",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 1.3118,
+      "total_latency_ms": 1.3137,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504541.12894,
+      "agent_id": "SQLAgent",
+      "tool": "query_db",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 1.4297,
+      "total_latency_ms": 1.4335,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504541.454645,
+      "agent_id": "DeployAgent",
+      "tool": "run_command",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 12.2006,
+      "total_latency_ms": 12.205,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504541.640404,
+      "agent_id": "CodeReviewer",
+      "tool": "read_file",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 0.5143,
+      "total_latency_ms": 0.52,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504541.705684,
+      "agent_id": "CodeReviewer",
+      "tool": "review_code",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 65.268,
+      "total_latency_ms": 65.2695,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504542.6254358,
+      "agent_id": "CodeAnalyzer",
+      "tool": "read_file",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 0.7708,
+      "total_latency_ms": 0.7764,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504542.625557,
+      "agent_id": "CodeWriter",
+      "tool": "write_file",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 0.8278,
+      "total_latency_ms": 0.8289,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504542.6313112,
+      "agent_id": "SQLAgent",
+      "tool": "query_db",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 0.6734,
+      "total_latency_ms": 0.677,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504542.973702,
+      "agent_id": "DeployAgent",
+      "tool": "run_command",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 13.9403,
+      "total_latency_ms": 13.9421,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504543.2104099,
+      "agent_id": "CodeReviewer",
+      "tool": "read_file",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 0.7302,
+      "total_latency_ms": 0.7385,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504543.360998,
+      "agent_id": "CodeReviewer",
+      "tool": "review_code",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 150.5713,
+      "total_latency_ms": 150.5733,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504544.129408,
+      "agent_id": "CodeWriter",
+      "tool": "write_file",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 0.4735,
+      "total_latency_ms": 0.4756,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504544.130783,
+      "agent_id": "CodeAnalyzer",
+      "tool": "read_file",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 0.2858,
+      "total_latency_ms": 0.2873,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504544.137119,
+      "agent_id": "SQLAgent",
+      "tool": "query_db",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 0.812,
+      "total_latency_ms": 0.8142,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504544.4878678,
+      "agent_id": "DeployAgent",
+      "tool": "run_command",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 10.0663,
+      "total_latency_ms": 10.0746,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504544.861991,
+      "agent_id": "CodeReviewer",
+      "tool": "read_file",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 0.3896,
+      "total_latency_ms": 0.3962,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504544.9303,
+      "agent_id": "CodeReviewer",
+      "tool": "review_code",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 68.2986,
+      "total_latency_ms": 68.299,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504545.6313128,
+      "agent_id": "CodeWriter",
+      "tool": "write_file",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 0.8228,
+      "total_latency_ms": 0.8262,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504545.635377,
+      "agent_id": "CodeAnalyzer",
+      "tool": "read_file",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 0.5817,
+      "total_latency_ms": 0.5846,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504545.643592,
+      "agent_id": "SQLAgent",
+      "tool": "query_db",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 1.3714,
+      "total_latency_ms": 1.3756,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504546.0049531,
+      "agent_id": "DeployAgent",
+      "tool": "run_command",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 11.944,
+      "total_latency_ms": 11.9485,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504546.43517,
+      "agent_id": "CodeReviewer",
+      "tool": "read_file",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 0.5574,
+      "total_latency_ms": 0.5663,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504546.507191,
+      "agent_id": "CodeReviewer",
+      "tool": "review_code",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 72.002,
+      "total_latency_ms": 72.0034,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504547.136606,
+      "agent_id": "CodeWriter",
+      "tool": "write_file",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 0.5106,
+      "total_latency_ms": 0.5126,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504547.1368651,
+      "agent_id": "CodeAnalyzer",
+      "tool": "read_file",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 0.2022,
+      "total_latency_ms": 0.2028,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504547.148903,
+      "agent_id": "SQLAgent",
+      "tool": "query_db",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 0.4587,
+      "total_latency_ms": 0.4602,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504547.520208,
+      "agent_id": "DeployAgent",
+      "tool": "run_command",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 10.1171,
+      "total_latency_ms": 10.1195,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504548.011034,
+      "agent_id": "CodeReviewer",
+      "tool": "read_file",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 0.531,
+      "total_latency_ms": 0.5371,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504548.097172,
+      "agent_id": "CodeReviewer",
+      "tool": "review_code",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 86.1213,
+      "total_latency_ms": 86.1233,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504548.643126,
+      "agent_id": "CodeAnalyzer",
+      "tool": "read_file",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 1.3326,
+      "total_latency_ms": 1.3424,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504548.6435862,
+      "agent_id": "CodeWriter",
+      "tool": "write_file",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 1.6635,
+      "total_latency_ms": 1.666,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504548.655735,
+      "agent_id": "SQLAgent",
+      "tool": "query_db",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 1.7395,
+      "total_latency_ms": 1.7465,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504549.079982,
+      "agent_id": "DeployAgent",
+      "tool": "run_command",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 54.6608,
+      "total_latency_ms": 54.6624,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504549.6019058,
+      "agent_id": "CodeReviewer",
+      "tool": "read_file",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 1.1879,
+      "total_latency_ms": 1.2037,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504549.729394,
+      "agent_id": "CodeReviewer",
+      "tool": "review_code",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 127.4546,
+      "total_latency_ms": 127.4577,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504550.149647,
+      "agent_id": "CodeAnalyzer",
+      "tool": "read_file",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 1.2978,
+      "total_latency_ms": 1.3032,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504550.150063,
+      "agent_id": "CodeWriter",
+      "tool": "write_file",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 1.4679,
+      "total_latency_ms": 1.47,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504550.1575391,
+      "agent_id": "SQLAgent",
+      "tool": "query_db",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 0.6317,
+      "total_latency_ms": 0.6338,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504550.587069,
+      "agent_id": "DeployAgent",
+      "tool": "run_command",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 6.795,
+      "total_latency_ms": 6.7965,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504551.234665,
+      "agent_id": "CodeReviewer",
+      "tool": "read_file",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 0.4466,
+      "total_latency_ms": 0.4555,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504551.30622,
+      "agent_id": "CodeReviewer",
+      "tool": "review_code",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 71.5427,
+      "total_latency_ms": 71.544,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504551.653643,
+      "agent_id": "CodeAnalyzer",
+      "tool": "read_file",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 1.4093,
+      "total_latency_ms": 1.414,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504551.65398,
+      "agent_id": "CodeWriter",
+      "tool": "write_file",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 1.645,
+      "total_latency_ms": 1.6472,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504551.664112,
+      "agent_id": "SQLAgent",
+      "tool": "query_db",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 1.4543,
+      "total_latency_ms": 1.4588,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504552.098748,
+      "agent_id": "DeployAgent",
+      "tool": "run_command",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 8.8727,
+      "total_latency_ms": 8.8746,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504552.812285,
+      "agent_id": "CodeReviewer",
+      "tool": "read_file",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 0.8562,
+      "total_latency_ms": 0.8715,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504552.888442,
+      "agent_id": "CodeReviewer",
+      "tool": "review_code",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 76.1203,
+      "total_latency_ms": 76.1229,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504553.160267,
+      "agent_id": "CodeAnalyzer",
+      "tool": "read_file",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 1.8576,
+      "total_latency_ms": 1.8611,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504553.161521,
+      "agent_id": "CodeWriter",
+      "tool": "write_file",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 2.3248,
+      "total_latency_ms": 2.3275,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504553.16991,
+      "agent_id": "SQLAgent",
+      "tool": "query_db",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 1.3827,
+      "total_latency_ms": 1.3849,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504553.617762,
+      "agent_id": "DeployAgent",
+      "tool": "run_command",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 13.8325,
+      "total_latency_ms": 13.837,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504554.391074,
+      "agent_id": "CodeReviewer",
+      "tool": "read_file",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 1.5167,
+      "total_latency_ms": 1.5338,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504554.5532968,
+      "agent_id": "CodeReviewer",
+      "tool": "review_code",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 162.193,
+      "total_latency_ms": 162.1958,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504554.665208,
+      "agent_id": "CodeAnalyzer",
+      "tool": "read_file",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 0.2825,
+      "total_latency_ms": 0.2845,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504554.666198,
+      "agent_id": "CodeWriter",
+      "tool": "write_file",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 0.328,
+      "total_latency_ms": 0.3297,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504554.671832,
+      "agent_id": "SQLAgent",
+      "tool": "query_db",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 0.4418,
+      "total_latency_ms": 0.4425,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504555.169173,
+      "agent_id": "DeployAgent",
+      "tool": "run_command",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 46.298,
+      "total_latency_ms": 46.2996,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504556.059948,
+      "agent_id": "CodeReviewer",
+      "tool": "read_file",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 1.3691,
+      "total_latency_ms": 1.391,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504556.170491,
+      "agent_id": "CodeAnalyzer",
+      "tool": "read_file",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 0.8168,
+      "total_latency_ms": 0.821,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504556.171027,
+      "agent_id": "CodeWriter",
+      "tool": "write_file",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 0.8373,
+      "total_latency_ms": 0.8392,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504556.177718,
+      "agent_id": "SQLAgent",
+      "tool": "query_db",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 0.8249,
+      "total_latency_ms": 0.8274,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504556.188564,
+      "agent_id": "CodeReviewer",
+      "tool": "review_code",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 128.5824,
+      "total_latency_ms": 128.5849,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504556.724726,
+      "agent_id": "DeployAgent",
+      "tool": "run_command",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 55.1533,
+      "total_latency_ms": 55.1554,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504557.672553,
+      "agent_id": "CodeAnalyzer",
+      "tool": "read_file",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 0.5026,
+      "total_latency_ms": 0.512,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504557.6741178,
+      "agent_id": "CodeWriter",
+      "tool": "write_file",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 0.4268,
+      "total_latency_ms": 0.4275,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504557.683646,
+      "agent_id": "SQLAgent",
+      "tool": "query_db",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 0.8471,
+      "total_latency_ms": 0.8532,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504557.691394,
+      "agent_id": "CodeReviewer",
+      "tool": "read_file",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 2.2951,
+      "total_latency_ms": 2.2976,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504557.757802,
+      "agent_id": "CodeReviewer",
+      "tool": "review_code",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 66.3924,
+      "total_latency_ms": 66.3944,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504558.237354,
+      "agent_id": "DeployAgent",
+      "tool": "run_command",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 9.4765,
+      "total_latency_ms": 9.4785,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504559.178983,
+      "agent_id": "CodeAnalyzer",
+      "tool": "read_file",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 1.0073,
+      "total_latency_ms": 1.0129,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504559.1792362,
+      "agent_id": "CodeWriter",
+      "tool": "write_file",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 1.407,
+      "total_latency_ms": 1.4168,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504559.1878579,
+      "agent_id": "SQLAgent",
+      "tool": "query_db",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 0.9033,
+      "total_latency_ms": 0.9085,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504559.260963,
+      "agent_id": "CodeReviewer",
+      "tool": "read_file",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 0.4443,
+      "total_latency_ms": 0.4465,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504559.3541682,
+      "agent_id": "CodeReviewer",
+      "tool": "review_code",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 93.1945,
+      "total_latency_ms": 93.1957,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504559.754687,
+      "agent_id": "DeployAgent",
+      "tool": "run_command",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 12.1723,
+      "total_latency_ms": 12.1766,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504560.682528,
+      "agent_id": "CodeAnalyzer",
+      "tool": "read_file",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 0.572,
+      "total_latency_ms": 0.5829,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504560.6833432,
+      "agent_id": "CodeWriter",
+      "tool": "write_file",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 0.7209,
+      "total_latency_ms": 0.7236,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504560.6890821,
+      "agent_id": "SQLAgent",
+      "tool": "query_db",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 0.4735,
+      "total_latency_ms": 0.4768,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504560.85854,
+      "agent_id": "CodeReviewer",
+      "tool": "read_file",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 0.3835,
+      "total_latency_ms": 0.3851,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504560.922223,
+      "agent_id": "CodeReviewer",
+      "tool": "review_code",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 63.6732,
+      "total_latency_ms": 63.6743,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504561.273908,
+      "agent_id": "DeployAgent",
+      "tool": "run_command",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 17.2164,
+      "total_latency_ms": 17.2185,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504562.186882,
+      "agent_id": "CodeAnalyzer",
+      "tool": "read_file",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 0.5074,
+      "total_latency_ms": 0.5155,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504562.186951,
+      "agent_id": "CodeWriter",
+      "tool": "write_file",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 0.506,
+      "total_latency_ms": 0.5067,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504562.1915362,
+      "agent_id": "SQLAgent",
+      "tool": "query_db",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 0.6678,
+      "total_latency_ms": 0.6725,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504562.4281,
+      "agent_id": "CodeReviewer",
+      "tool": "read_file",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 0.7691,
+      "total_latency_ms": 0.7731,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504562.499392,
+      "agent_id": "CodeReviewer",
+      "tool": "review_code",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 71.2658,
+      "total_latency_ms": 71.2684,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504562.848139,
+      "agent_id": "DeployAgent",
+      "tool": "run_command",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 74.0423,
+      "total_latency_ms": 74.0445,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504563.6983712,
+      "agent_id": "CodeAnalyzer",
+      "tool": "read_file",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 0.6424,
+      "total_latency_ms": 0.6444,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504563.698535,
+      "agent_id": "SQLAgent",
+      "tool": "query_db",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 0.8538,
+      "total_latency_ms": 0.8574,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504563.6985679,
+      "agent_id": "CodeWriter",
+      "tool": "write_file",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 3.8994,
+      "total_latency_ms": 3.9045,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504564.004117,
+      "agent_id": "CodeReviewer",
+      "tool": "read_file",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 0.5745,
+      "total_latency_ms": 0.5779,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504564.1166751,
+      "agent_id": "CodeReviewer",
+      "tool": "review_code",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 112.5325,
+      "total_latency_ms": 112.5351,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504564.362856,
+      "agent_id": "DeployAgent",
+      "tool": "run_command",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 9.6351,
+      "total_latency_ms": 9.6366,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504565.204393,
+      "agent_id": "CodeAnalyzer",
+      "tool": "read_file",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 0.7538,
+      "total_latency_ms": 0.8173,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504565.204542,
+      "agent_id": "SQLAgent",
+      "tool": "query_db",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 0.7611,
+      "total_latency_ms": 0.7635,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504565.204601,
+      "agent_id": "CodeWriter",
+      "tool": "write_file",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 0.877,
+      "total_latency_ms": 0.8779,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504565.6171021,
+      "agent_id": "CodeReviewer",
+      "tool": "read_file",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 0.2995,
+      "total_latency_ms": 0.302,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504565.7574441,
+      "agent_id": "CodeReviewer",
+      "tool": "review_code",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 140.3278,
+      "total_latency_ms": 140.3286,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504565.8844988,
+      "agent_id": "DeployAgent",
+      "tool": "run_command",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 19.9024,
+      "total_latency_ms": 19.9036,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504566.7109902,
+      "agent_id": "SQLAgent",
+      "tool": "query_db",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 0.989,
+      "total_latency_ms": 0.993,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504566.7112162,
+      "agent_id": "CodeWriter",
+      "tool": "write_file",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 1.3985,
+      "total_latency_ms": 1.4014,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504566.711367,
+      "agent_id": "CodeAnalyzer",
+      "tool": "read_file",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 1.653,
+      "total_latency_ms": 1.6635,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504567.262893,
+      "agent_id": "CodeReviewer",
+      "tool": "read_file",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 2.34,
+      "total_latency_ms": 2.3429,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504567.359374,
+      "agent_id": "CodeReviewer",
+      "tool": "review_code",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 96.4593,
+      "total_latency_ms": 96.461,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504567.3964741,
+      "agent_id": "DeployAgent",
+      "tool": "run_command",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 7.0045,
+      "total_latency_ms": 7.006,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504568.2163131,
+      "agent_id": "CodeWriter",
+      "tool": "write_file",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 1.9919,
+      "total_latency_ms": 2.0058,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504568.216915,
+      "agent_id": "SQLAgent",
+      "tool": "query_db",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 1.6905,
+      "total_latency_ms": 1.6961,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504568.217122,
+      "agent_id": "CodeAnalyzer",
+      "tool": "read_file",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 0.6716,
+      "total_latency_ms": 0.6741,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504568.864185,
+      "agent_id": "CodeReviewer",
+      "tool": "read_file",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 1.2972,
+      "total_latency_ms": 1.3045,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504568.914315,
+      "agent_id": "DeployAgent",
+      "tool": "run_command",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 13.7428,
+      "total_latency_ms": 13.7461,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504568.9334242,
+      "agent_id": "CodeReviewer",
+      "tool": "review_code",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 69.2013,
+      "total_latency_ms": 69.2048,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504569.720982,
+      "agent_id": "CodeAnalyzer",
+      "tool": "read_file",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 1.3682,
+      "total_latency_ms": 1.3774,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504569.7211242,
+      "agent_id": "CodeWriter",
+      "tool": "write_file",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 1.4198,
+      "total_latency_ms": 1.4217,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504569.722168,
+      "agent_id": "SQLAgent",
+      "tool": "query_db",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 0.7417,
+      "total_latency_ms": 0.7435,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504570.432147,
+      "agent_id": "DeployAgent",
+      "tool": "run_command",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 12.7353,
+      "total_latency_ms": 12.7412,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504570.436755,
+      "agent_id": "CodeReviewer",
+      "tool": "read_file",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 0.4625,
+      "total_latency_ms": 0.4675,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504570.512001,
+      "agent_id": "CodeReviewer",
+      "tool": "review_code",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 75.2303,
+      "total_latency_ms": 75.2324,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504571.226687,
+      "agent_id": "CodeAnalyzer",
+      "tool": "read_file",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 0.6092,
+      "total_latency_ms": 0.6109,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504571.226918,
+      "agent_id": "CodeWriter",
+      "tool": "write_file",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 0.7285,
+      "total_latency_ms": 0.7292,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504571.227726,
+      "agent_id": "SQLAgent",
+      "tool": "query_db",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 0.491,
+      "total_latency_ms": 0.492,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504571.943794,
+      "agent_id": "DeployAgent",
+      "tool": "run_command",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 6.5409,
+      "total_latency_ms": 6.5446,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504572.012945,
+      "agent_id": "CodeReviewer",
+      "tool": "read_file",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 0.3774,
+      "total_latency_ms": 0.3858,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504572.119652,
+      "agent_id": "CodeReviewer",
+      "tool": "review_code",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 106.6897,
+      "total_latency_ms": 106.6915,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504572.732321,
+      "agent_id": "CodeAnalyzer",
+      "tool": "read_file",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 0.5113,
+      "total_latency_ms": 0.5125,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504572.732405,
+      "agent_id": "CodeWriter",
+      "tool": "write_file",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 0.6325,
+      "total_latency_ms": 0.6344,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504572.733314,
+      "agent_id": "SQLAgent",
+      "tool": "query_db",
+      "success": true,
+      "auth_latency_ms": 0.0,
+      "tool_latency_ms": 0.526,
+      "total_latency_ms": 0.5282,
+      "error": ""
+    }
+  ],
+  "leash_audit": [
+    {
+      "timestamp": 1775504573.110801,
+      "agent_id": "SQLAgent",
+      "tool": "query_db",
+      "success": true,
+      "auth_latency_ms": 5.9221,
+      "tool_latency_ms": 9.5007,
+      "total_latency_ms": 15.4241,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504573.111525,
+      "agent_id": "CodeReviewer",
+      "tool": "read_file",
+      "success": true,
+      "auth_latency_ms": 12.177,
+      "tool_latency_ms": 9.7492,
+      "total_latency_ms": 21.928,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504573.1176262,
+      "agent_id": "CodeAnalyzer",
+      "tool": "read_file",
+      "success": true,
+      "auth_latency_ms": 6.2521,
+      "tool_latency_ms": 34.375,
+      "total_latency_ms": 40.6298,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504573.120374,
+      "agent_id": "CodeWriter",
+      "tool": "write_file",
+      "success": true,
+      "auth_latency_ms": 6.0947,
+      "tool_latency_ms": 30.9373,
+      "total_latency_ms": 37.0343,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504573.120546,
+      "agent_id": "DeployAgent",
+      "tool": "run_command",
+      "success": true,
+      "auth_latency_ms": 6.0787,
+      "tool_latency_ms": 12.541,
+      "total_latency_ms": 18.6211,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504573.186048,
+      "agent_id": "CodeReviewer",
+      "tool": "review_code",
+      "success": true,
+      "auth_latency_ms": 6.8716,
+      "tool_latency_ms": 67.6247,
+      "total_latency_ms": 74.5034,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504574.653257,
+      "agent_id": "SQLAgent",
+      "tool": "query_db",
+      "success": true,
+      "auth_latency_ms": 9.7075,
+      "tool_latency_ms": 27.507,
+      "total_latency_ms": 37.2272,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504574.653484,
+      "agent_id": "CodeAnalyzer",
+      "tool": "read_file",
+      "success": true,
+      "auth_latency_ms": 20.8963,
+      "tool_latency_ms": 6.7824,
+      "total_latency_ms": 27.681,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504574.653676,
+      "agent_id": "CodeWriter",
+      "tool": "write_file",
+      "success": true,
+      "auth_latency_ms": 14.2423,
+      "tool_latency_ms": 7.6116,
+      "total_latency_ms": 21.8564,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504574.658259,
+      "agent_id": "DeployAgent",
+      "tool": "run_command",
+      "success": true,
+      "auth_latency_ms": 6.1013,
+      "tool_latency_ms": 14.0088,
+      "total_latency_ms": 20.1134,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504574.694497,
+      "agent_id": "CodeReviewer",
+      "tool": "read_file",
+      "success": true,
+      "auth_latency_ms": 6.3142,
+      "tool_latency_ms": 0.51,
+      "total_latency_ms": 6.8592,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504575.002485,
+      "agent_id": "CodeReviewer",
+      "tool": "review_code",
+      "success": true,
+      "auth_latency_ms": 5.9625,
+      "tool_latency_ms": 302.0074,
+      "total_latency_ms": 307.9729,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504576.181947,
+      "agent_id": "SQLAgent",
+      "tool": "query_db",
+      "success": true,
+      "auth_latency_ms": 6.3384,
+      "tool_latency_ms": 21.9531,
+      "total_latency_ms": 28.3058,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504576.1820412,
+      "agent_id": "CodeWriter",
+      "tool": "write_file",
+      "success": true,
+      "auth_latency_ms": 17.6718,
+      "tool_latency_ms": 4.2335,
+      "total_latency_ms": 21.912,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504576.1820722,
+      "agent_id": "CodeAnalyzer",
+      "tool": "read_file",
+      "success": true,
+      "auth_latency_ms": 17.1108,
+      "tool_latency_ms": 4.8932,
+      "total_latency_ms": 22.0105,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504576.233633,
+      "agent_id": "DeployAgent",
+      "tool": "run_command",
+      "success": true,
+      "auth_latency_ms": 13.6835,
+      "tool_latency_ms": 54.5795,
+      "total_latency_ms": 68.269,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504576.5181801,
+      "agent_id": "CodeReviewer",
+      "tool": "read_file",
+      "success": true,
+      "auth_latency_ms": 10.691,
+      "tool_latency_ms": 0.322,
+      "total_latency_ms": 11.1292,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504576.679919,
+      "agent_id": "CodeReviewer",
+      "tool": "review_code",
+      "success": true,
+      "auth_latency_ms": 6.2693,
+      "tool_latency_ms": 155.4537,
+      "total_latency_ms": 161.7253,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504577.7098749,
+      "agent_id": "CodeAnalyzer",
+      "tool": "read_file",
+      "success": true,
+      "auth_latency_ms": 13.32,
+      "tool_latency_ms": 10.2428,
+      "total_latency_ms": 23.5684,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504577.709943,
+      "agent_id": "SQLAgent",
+      "tool": "query_db",
+      "success": true,
+      "auth_latency_ms": 14.2343,
+      "tool_latency_ms": 3.6831,
+      "total_latency_ms": 17.9202,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504577.710475,
+      "agent_id": "CodeWriter",
+      "tool": "write_file",
+      "success": true,
+      "auth_latency_ms": 9.446,
+      "tool_latency_ms": 1.1727,
+      "total_latency_ms": 10.6223,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504577.782513,
+      "agent_id": "DeployAgent",
+      "tool": "run_command",
+      "success": true,
+      "auth_latency_ms": 6.4693,
+      "tool_latency_ms": 38.1535,
+      "total_latency_ms": 44.6268,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504578.1927419,
+      "agent_id": "CodeReviewer",
+      "tool": "read_file",
+      "success": true,
+      "auth_latency_ms": 7.486,
+      "tool_latency_ms": 0.3288,
+      "total_latency_ms": 7.8191,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504578.274664,
+      "agent_id": "CodeReviewer",
+      "tool": "review_code",
+      "success": true,
+      "auth_latency_ms": 6.1865,
+      "tool_latency_ms": 75.7248,
+      "total_latency_ms": 81.9138,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504579.2344372,
+      "agent_id": "SQLAgent",
+      "tool": "query_db",
+      "success": true,
+      "auth_latency_ms": 8.8753,
+      "tool_latency_ms": 6.934,
+      "total_latency_ms": 15.8117,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504579.234611,
+      "agent_id": "CodeAnalyzer",
+      "tool": "read_file",
+      "success": true,
+      "auth_latency_ms": 15.5558,
+      "tool_latency_ms": 0.5103,
+      "total_latency_ms": 16.0682,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504579.2347379,
+      "agent_id": "CodeWriter",
+      "tool": "write_file",
+      "success": true,
+      "auth_latency_ms": 15.5618,
+      "tool_latency_ms": 7.8899,
+      "total_latency_ms": 23.455,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504579.300576,
+      "agent_id": "DeployAgent",
+      "tool": "run_command",
+      "success": true,
+      "auth_latency_ms": 6.1805,
+      "tool_latency_ms": 7.4428,
+      "total_latency_ms": 13.6261,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504579.784538,
+      "agent_id": "CodeReviewer",
+      "tool": "read_file",
+      "success": true,
+      "auth_latency_ms": 6.3835,
+      "tool_latency_ms": 0.3775,
+      "total_latency_ms": 6.772,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504579.860201,
+      "agent_id": "CodeReviewer",
+      "tool": "review_code",
+      "success": true,
+      "auth_latency_ms": 6.3203,
+      "tool_latency_ms": 69.3272,
+      "total_latency_ms": 75.6492,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504580.7605052,
+      "agent_id": "CodeAnalyzer",
+      "tool": "read_file",
+      "success": true,
+      "auth_latency_ms": 18.8097,
+      "tool_latency_ms": 2.1391,
+      "total_latency_ms": 20.9517,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504580.760556,
+      "agent_id": "CodeWriter",
+      "tool": "write_file",
+      "success": true,
+      "auth_latency_ms": 12.5271,
+      "tool_latency_ms": 8.4002,
+      "total_latency_ms": 20.93,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504580.76057,
+      "agent_id": "SQLAgent",
+      "tool": "query_db",
+      "success": true,
+      "auth_latency_ms": 14.5486,
+      "tool_latency_ms": 0.5732,
+      "total_latency_ms": 15.1242,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504580.819223,
+      "agent_id": "DeployAgent",
+      "tool": "run_command",
+      "success": true,
+      "auth_latency_ms": 6.6085,
+      "tool_latency_ms": 6.9414,
+      "total_latency_ms": 13.553,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504581.370116,
+      "agent_id": "CodeReviewer",
+      "tool": "read_file",
+      "success": true,
+      "auth_latency_ms": 8.3147,
+      "tool_latency_ms": 0.6542,
+      "total_latency_ms": 8.9813,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504581.45705,
+      "agent_id": "CodeReviewer",
+      "tool": "review_code",
+      "success": true,
+      "auth_latency_ms": 6.518,
+      "tool_latency_ms": 80.3917,
+      "total_latency_ms": 86.9129,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504582.2812002,
+      "agent_id": "CodeAnalyzer",
+      "tool": "read_file",
+      "success": true,
+      "auth_latency_ms": 6.5104,
+      "tool_latency_ms": 0.4435,
+      "total_latency_ms": 6.9557,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504582.2813408,
+      "agent_id": "SQLAgent",
+      "tool": "query_db",
+      "success": true,
+      "auth_latency_ms": 12.7515,
+      "tool_latency_ms": 0.6904,
+      "total_latency_ms": 13.4445,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504582.2813802,
+      "agent_id": "CodeWriter",
+      "tool": "write_file",
+      "success": true,
+      "auth_latency_ms": 6.7226,
+      "tool_latency_ms": 13.5292,
+      "total_latency_ms": 20.2537,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504582.388041,
+      "agent_id": "DeployAgent",
+      "tool": "run_command",
+      "success": true,
+      "auth_latency_ms": 6.1459,
+      "tool_latency_ms": 62.4686,
+      "total_latency_ms": 68.6181,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504582.971369,
+      "agent_id": "CodeReviewer",
+      "tool": "read_file",
+      "success": true,
+      "auth_latency_ms": 9.3694,
+      "tool_latency_ms": 0.3965,
+      "total_latency_ms": 9.7817,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504583.058644,
+      "agent_id": "CodeReviewer",
+      "tool": "review_code",
+      "success": true,
+      "auth_latency_ms": 6.1147,
+      "tool_latency_ms": 81.1436,
+      "total_latency_ms": 87.2603,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504583.807046,
+      "agent_id": "SQLAgent",
+      "tool": "query_db",
+      "success": true,
+      "auth_latency_ms": 9.5304,
+      "tool_latency_ms": 0.8134,
+      "total_latency_ms": 10.3461,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504583.8071082,
+      "agent_id": "CodeAnalyzer",
+      "tool": "read_file",
+      "success": true,
+      "auth_latency_ms": 14.3733,
+      "tool_latency_ms": 1.6109,
+      "total_latency_ms": 15.9871,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504583.807229,
+      "agent_id": "CodeWriter",
+      "tool": "write_file",
+      "success": true,
+      "auth_latency_ms": 19.344,
+      "tool_latency_ms": 3.5055,
+      "total_latency_ms": 22.853,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504583.904432,
+      "agent_id": "DeployAgent",
+      "tool": "run_command",
+      "success": true,
+      "auth_latency_ms": 6.3117,
+      "tool_latency_ms": 6.3754,
+      "total_latency_ms": 12.6895,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504584.570601,
+      "agent_id": "CodeReviewer",
+      "tool": "read_file",
+      "success": true,
+      "auth_latency_ms": 6.4354,
+      "tool_latency_ms": 0.6205,
+      "total_latency_ms": 7.0635,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504584.652329,
+      "agent_id": "CodeReviewer",
+      "tool": "review_code",
+      "success": true,
+      "auth_latency_ms": 5.937,
+      "tool_latency_ms": 75.7784,
+      "total_latency_ms": 81.7166,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504585.335567,
+      "agent_id": "CodeAnalyzer",
+      "tool": "read_file",
+      "success": true,
+      "auth_latency_ms": 22.5003,
+      "tool_latency_ms": 1.993,
+      "total_latency_ms": 24.4971,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504585.335832,
+      "agent_id": "SQLAgent",
+      "tool": "query_db",
+      "success": true,
+      "auth_latency_ms": 8.8752,
+      "tool_latency_ms": 0.801,
+      "total_latency_ms": 9.6781,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504585.3360362,
+      "agent_id": "CodeWriter",
+      "tool": "write_file",
+      "success": true,
+      "auth_latency_ms": 14.9145,
+      "tool_latency_ms": 9.9294,
+      "total_latency_ms": 24.8473,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504585.422152,
+      "agent_id": "DeployAgent",
+      "tool": "run_command",
+      "success": true,
+      "auth_latency_ms": 7.5386,
+      "tool_latency_ms": 6.7902,
+      "total_latency_ms": 14.3318,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504586.1595168,
+      "agent_id": "CodeReviewer",
+      "tool": "read_file",
+      "success": true,
+      "auth_latency_ms": 6.3121,
+      "tool_latency_ms": 0.411,
+      "total_latency_ms": 6.7306,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504586.237789,
+      "agent_id": "CodeReviewer",
+      "tool": "review_code",
+      "success": true,
+      "auth_latency_ms": 6.4031,
+      "tool_latency_ms": 71.853,
+      "total_latency_ms": 78.2582,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504586.8599591,
+      "agent_id": "SQLAgent",
+      "tool": "query_db",
+      "success": true,
+      "auth_latency_ms": 9.7524,
+      "tool_latency_ms": 14.0733,
+      "total_latency_ms": 23.8303,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504586.8602939,
+      "agent_id": "CodeAnalyzer",
+      "tool": "read_file",
+      "success": true,
+      "auth_latency_ms": 13.7441,
+      "tool_latency_ms": 0.5548,
+      "total_latency_ms": 14.3006,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504586.860446,
+      "agent_id": "CodeWriter",
+      "tool": "write_file",
+      "success": true,
+      "auth_latency_ms": 12.7545,
+      "tool_latency_ms": 1.6165,
+      "total_latency_ms": 14.3875,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504586.946698,
+      "agent_id": "DeployAgent",
+      "tool": "run_command",
+      "success": true,
+      "auth_latency_ms": 6.1303,
+      "tool_latency_ms": 13.3435,
+      "total_latency_ms": 19.4766,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504587.7456598,
+      "agent_id": "CodeReviewer",
+      "tool": "read_file",
+      "success": true,
+      "auth_latency_ms": 7.074,
+      "tool_latency_ms": 0.5272,
+      "total_latency_ms": 7.61,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504587.823756,
+      "agent_id": "CodeReviewer",
+      "tool": "review_code",
+      "success": true,
+      "auth_latency_ms": 6.1815,
+      "tool_latency_ms": 71.8955,
+      "total_latency_ms": 78.0799,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504588.3807518,
+      "agent_id": "SQLAgent",
+      "tool": "query_db",
+      "success": true,
+      "auth_latency_ms": 6.2302,
+      "tool_latency_ms": 12.9483,
+      "total_latency_ms": 19.185,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504588.381058,
+      "agent_id": "CodeAnalyzer",
+      "tool": "read_file",
+      "success": true,
+      "auth_latency_ms": 6.2189,
+      "tool_latency_ms": 6.9875,
+      "total_latency_ms": 13.2087,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504588.3812082,
+      "agent_id": "CodeWriter",
+      "tool": "write_file",
+      "success": true,
+      "auth_latency_ms": 6.2404,
+      "tool_latency_ms": 0.7777,
+      "total_latency_ms": 7.0196,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504588.459019,
+      "agent_id": "DeployAgent",
+      "tool": "run_command",
+      "success": true,
+      "auth_latency_ms": 6.0895,
+      "tool_latency_ms": 6.0404,
+      "total_latency_ms": 12.1322,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504589.339231,
+      "agent_id": "CodeReviewer",
+      "tool": "read_file",
+      "success": true,
+      "auth_latency_ms": 9.5663,
+      "tool_latency_ms": 0.6412,
+      "total_latency_ms": 10.2206,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504589.421949,
+      "agent_id": "CodeReviewer",
+      "tool": "review_code",
+      "success": true,
+      "auth_latency_ms": 6.3153,
+      "tool_latency_ms": 76.3796,
+      "total_latency_ms": 82.6972,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504589.906377,
+      "agent_id": "SQLAgent",
+      "tool": "query_db",
+      "success": true,
+      "auth_latency_ms": 13.943,
+      "tool_latency_ms": 7.4212,
+      "total_latency_ms": 21.3687,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504589.9066298,
+      "agent_id": "CodeAnalyzer",
+      "tool": "read_file",
+      "success": true,
+      "auth_latency_ms": 14.0975,
+      "tool_latency_ms": 1.172,
+      "total_latency_ms": 15.271,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504589.90682,
+      "agent_id": "CodeWriter",
+      "tool": "write_file",
+      "success": true,
+      "auth_latency_ms": 14.6012,
+      "tool_latency_ms": 0.9023,
+      "total_latency_ms": 15.5048,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504589.976897,
+      "agent_id": "DeployAgent",
+      "tool": "run_command",
+      "success": true,
+      "auth_latency_ms": 6.0427,
+      "tool_latency_ms": 7.7097,
+      "total_latency_ms": 13.7532,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504590.9336278,
+      "agent_id": "CodeReviewer",
+      "tool": "read_file",
+      "success": true,
+      "auth_latency_ms": 10.545,
+      "tool_latency_ms": 0.3787,
+      "total_latency_ms": 10.938,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504591.01986,
+      "agent_id": "CodeReviewer",
+      "tool": "review_code",
+      "success": true,
+      "auth_latency_ms": 8.7485,
+      "tool_latency_ms": 77.4639,
+      "total_latency_ms": 86.2156,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504591.4352388,
+      "agent_id": "SQLAgent",
+      "tool": "query_db",
+      "success": true,
+      "auth_latency_ms": 14.437,
+      "tool_latency_ms": 9.0835,
+      "total_latency_ms": 23.5243,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504591.435539,
+      "agent_id": "CodeAnalyzer",
+      "tool": "read_file",
+      "success": true,
+      "auth_latency_ms": 21.0318,
+      "tool_latency_ms": 2.9334,
+      "total_latency_ms": 23.9697,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504591.435596,
+      "agent_id": "CodeWriter",
+      "tool": "write_file",
+      "success": true,
+      "auth_latency_ms": 16.7827,
+      "tool_latency_ms": 0.845,
+      "total_latency_ms": 17.6302,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504591.491488,
+      "agent_id": "DeployAgent",
+      "tool": "run_command",
+      "success": true,
+      "auth_latency_ms": 6.091,
+      "tool_latency_ms": 7.7071,
+      "total_latency_ms": 13.7993,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504592.528351,
+      "agent_id": "CodeReviewer",
+      "tool": "read_file",
+      "success": true,
+      "auth_latency_ms": 6.4517,
+      "tool_latency_ms": 0.4476,
+      "total_latency_ms": 6.9077,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504592.6034849,
+      "agent_id": "CodeReviewer",
+      "tool": "review_code",
+      "success": true,
+      "auth_latency_ms": 5.9907,
+      "tool_latency_ms": 69.1295,
+      "total_latency_ms": 75.1212,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504592.95558,
+      "agent_id": "CodeAnalyzer",
+      "tool": "read_file",
+      "success": true,
+      "auth_latency_ms": 6.5666,
+      "tool_latency_ms": 12.8449,
+      "total_latency_ms": 19.418,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504592.955673,
+      "agent_id": "SQLAgent",
+      "tool": "query_db",
+      "success": true,
+      "auth_latency_ms": 12.3114,
+      "tool_latency_ms": 0.5617,
+      "total_latency_ms": 12.8754,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504592.955692,
+      "agent_id": "CodeWriter",
+      "tool": "write_file",
+      "success": true,
+      "auth_latency_ms": 5.9309,
+      "tool_latency_ms": 0.6183,
+      "total_latency_ms": 6.5519,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504593.010359,
+      "agent_id": "DeployAgent",
+      "tool": "run_command",
+      "success": true,
+      "auth_latency_ms": 6.0728,
+      "tool_latency_ms": 7.7421,
+      "total_latency_ms": 13.8159,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504594.118717,
+      "agent_id": "CodeReviewer",
+      "tool": "read_file",
+      "success": true,
+      "auth_latency_ms": 9.4683,
+      "tool_latency_ms": 0.5463,
+      "total_latency_ms": 10.0284,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504594.194829,
+      "agent_id": "CodeReviewer",
+      "tool": "review_code",
+      "success": true,
+      "auth_latency_ms": 6.162,
+      "tool_latency_ms": 69.934,
+      "total_latency_ms": 76.0976,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504594.478814,
+      "agent_id": "SQLAgent",
+      "tool": "query_db",
+      "success": true,
+      "auth_latency_ms": 6.2243,
+      "tool_latency_ms": 6.6738,
+      "total_latency_ms": 12.8995,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504594.4792168,
+      "agent_id": "CodeAnalyzer",
+      "tool": "read_file",
+      "success": true,
+      "auth_latency_ms": 6.347,
+      "tool_latency_ms": 13.3518,
+      "total_latency_ms": 19.7013,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504594.479362,
+      "agent_id": "CodeWriter",
+      "tool": "write_file",
+      "success": true,
+      "auth_latency_ms": 6.2305,
+      "tool_latency_ms": 0.9362,
+      "total_latency_ms": 7.1688,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504594.524029,
+      "agent_id": "DeployAgent",
+      "tool": "run_command",
+      "success": true,
+      "auth_latency_ms": 6.058,
+      "tool_latency_ms": 6.5839,
+      "total_latency_ms": 12.6432,
+      "error": ""
+    },
+    {
+      "timestamp": 1775504595.7004192,
+      "agent_id": "CodeReviewer",
+      "tool": "read_file",
+      "success": false,
+      "auth_latency_ms": 0.0779,
+      "tool_latency_ms": 0.0,
+      "total_latency_ms": 0.1042,
+      "error": "LEASH auth denied"
+    },
+    {
+      "timestamp": 1775504595.984145,
+      "agent_id": "SQLAgent",
+      "tool": "query_db",
+      "success": false,
+      "auth_latency_ms": 0.0367,
+      "tool_latency_ms": 0.0,
+      "total_latency_ms": 0.0457,
+      "error": "LEASH auth denied"
+    },
+    {
+      "timestamp": 1775504595.984266,
+      "agent_id": "CodeWriter",
+      "tool": "write_file",
+      "success": false,
+      "auth_latency_ms": 0.0119,
+      "tool_latency_ms": 0.0,
+      "total_latency_ms": 0.0145,
+      "error": "LEASH auth denied"
+    },
+    {
+      "timestamp": 1775504595.9843168,
+      "agent_id": "CodeAnalyzer",
+      "tool": "read_file",
+      "success": false,
+      "auth_latency_ms": 0.0063,
+      "tool_latency_ms": 0.0,
+      "total_latency_ms": 0.0098,
+      "error": "LEASH auth denied"
+    },
+    {
+      "timestamp": 1775504596.029189,
+      "agent_id": "DeployAgent",
+      "tool": "run_command",
+      "success": false,
+      "auth_latency_ms": 0.0527,
+      "tool_latency_ms": 0.0,
+      "total_latency_ms": 0.0622,
+      "error": "LEASH auth denied"
+    },
+    {
+      "timestamp": 1775504597.2057002,
+      "agent_id": "CodeReviewer",
+      "tool": "read_file",
+      "success": false,
+      "auth_latency_ms": 0.0339,
+      "tool_latency_ms": 0.0,
+      "total_latency_ms": 0.0396,
+      "error": "LEASH auth denied"
+    },
+    {
+      "timestamp": 1775504597.486486,
+      "agent_id": "CodeWriter",
+      "tool": "write_file",
+      "success": false,
+      "auth_latency_ms": 0.0375,
+      "tool_latency_ms": 0.0,
+      "total_latency_ms": 0.0468,
+      "error": "LEASH auth denied"
+    },
+    {
+      "timestamp": 1775504597.4866052,
+      "agent_id": "CodeAnalyzer",
+      "tool": "read_file",
+      "success": false,
+      "auth_latency_ms": 0.015,
+      "tool_latency_ms": 0.0,
+      "total_latency_ms": 0.0189,
+      "error": "LEASH auth denied"
+    },
+    {
+      "timestamp": 1775504597.487073,
+      "agent_id": "SQLAgent",
+      "tool": "query_db",
+      "success": false,
+      "auth_latency_ms": 0.0152,
+      "tool_latency_ms": 0.0,
+      "total_latency_ms": 0.0203,
+      "error": "LEASH auth denied"
+    },
+    {
+      "timestamp": 1775504597.5340102,
+      "agent_id": "DeployAgent",
+      "tool": "run_command",
+      "success": false,
+      "auth_latency_ms": 0.0195,
+      "tool_latency_ms": 0.0,
+      "total_latency_ms": 0.0252,
+      "error": "LEASH auth denied"
+    },
+    {
+      "timestamp": 1775504598.710378,
+      "agent_id": "CodeReviewer",
+      "tool": "read_file",
+      "success": false,
+      "auth_latency_ms": 0.0125,
+      "tool_latency_ms": 0.0,
+      "total_latency_ms": 0.0146,
+      "error": "LEASH auth denied"
+    },
+    {
+      "timestamp": 1775504598.986827,
+      "agent_id": "CodeWriter",
+      "tool": "write_file",
+      "success": false,
+      "auth_latency_ms": 0.0104,
+      "tool_latency_ms": 0.0,
+      "total_latency_ms": 0.012,
+      "error": "LEASH auth denied"
+    },
+    {
+      "timestamp": 1775504598.989873,
+      "agent_id": "CodeAnalyzer",
+      "tool": "read_file",
+      "success": false,
+      "auth_latency_ms": 0.0051,
+      "tool_latency_ms": 0.0,
+      "total_latency_ms": 0.0063,
+      "error": "LEASH auth denied"
+    },
+    {
+      "timestamp": 1775504598.9912908,
+      "agent_id": "SQLAgent",
+      "tool": "query_db",
+      "success": false,
+      "auth_latency_ms": 0.0037,
+      "tool_latency_ms": 0.0,
+      "total_latency_ms": 0.0042,
+      "error": "LEASH auth denied"
+    },
+    {
+      "timestamp": 1775504599.037172,
+      "agent_id": "DeployAgent",
+      "tool": "run_command",
+      "success": false,
+      "auth_latency_ms": 0.0066,
+      "tool_latency_ms": 0.0,
+      "total_latency_ms": 0.0078,
+      "error": "LEASH auth denied"
+    },
+    {
+      "timestamp": 1775504600.21552,
+      "agent_id": "CodeReviewer",
+      "tool": "read_file",
+      "success": false,
+      "auth_latency_ms": 0.0333,
+      "tool_latency_ms": 0.0,
+      "total_latency_ms": 0.0391,
+      "error": "LEASH auth denied"
+    },
+    {
+      "timestamp": 1775504600.4869928,
+      "agent_id": "CodeWriter",
+      "tool": "write_file",
+      "success": false,
+      "auth_latency_ms": 0.0085,
+      "tool_latency_ms": 0.0,
+      "total_latency_ms": 0.0101,
+      "error": "LEASH auth denied"
+    },
+    {
+      "timestamp": 1775504600.4949162,
+      "agent_id": "CodeAnalyzer",
+      "tool": "read_file",
+      "success": false,
+      "auth_latency_ms": 0.007,
+      "tool_latency_ms": 0.0,
+      "total_latency_ms": 0.0083,
+      "error": "LEASH auth denied"
+    },
+    {
+      "timestamp": 1775504600.496331,
+      "agent_id": "SQLAgent",
+      "tool": "query_db",
+      "success": false,
+      "auth_latency_ms": 0.006,
+      "tool_latency_ms": 0.0,
+      "total_latency_ms": 0.0075,
+      "error": "LEASH auth denied"
+    },
+    {
+      "timestamp": 1775504600.542229,
+      "agent_id": "DeployAgent",
+      "tool": "run_command",
+      "success": false,
+      "auth_latency_ms": 0.0082,
+      "tool_latency_ms": 0.0,
+      "total_latency_ms": 0.0096,
+      "error": "LEASH auth denied"
+    },
+    {
+      "timestamp": 1775504601.720351,
+      "agent_id": "CodeReviewer",
+      "tool": "read_file",
+      "success": false,
+      "auth_latency_ms": 0.0106,
+      "tool_latency_ms": 0.0,
+      "total_latency_ms": 0.0125,
+      "error": "LEASH auth denied"
+    },
+    {
+      "timestamp": 1775504601.9921322,
+      "agent_id": "CodeWriter",
+      "tool": "write_file",
+      "success": false,
+      "auth_latency_ms": 0.0437,
+      "tool_latency_ms": 0.0,
+      "total_latency_ms": 0.0478,
+      "error": "LEASH auth denied"
+    },
+    {
+      "timestamp": 1775504601.999991,
+      "agent_id": "CodeAnalyzer",
+      "tool": "read_file",
+      "success": false,
+      "auth_latency_ms": 0.0145,
+      "tool_latency_ms": 0.0,
+      "total_latency_ms": 0.0171,
+      "error": "LEASH auth denied"
+    },
+    {
+      "timestamp": 1775504602.001385,
+      "agent_id": "SQLAgent",
+      "tool": "query_db",
+      "success": false,
+      "auth_latency_ms": 0.0069,
+      "tool_latency_ms": 0.0,
+      "total_latency_ms": 0.0087,
+      "error": "LEASH auth denied"
+    },
+    {
+      "timestamp": 1775504602.047333,
+      "agent_id": "DeployAgent",
+      "tool": "run_command",
+      "success": false,
+      "auth_latency_ms": 0.024,
+      "tool_latency_ms": 0.0,
+      "total_latency_ms": 0.0279,
+      "error": "LEASH auth denied"
+    },
+    {
+      "timestamp": 1775504603.225465,
+      "agent_id": "CodeReviewer",
+      "tool": "read_file",
+      "success": false,
+      "auth_latency_ms": 0.0224,
+      "tool_latency_ms": 0.0,
+      "total_latency_ms": 0.0264,
+      "error": "LEASH auth denied"
+    },
+    {
+      "timestamp": 1775504603.4954681,
+      "agent_id": "CodeWriter",
+      "tool": "write_file",
+      "success": false,
+      "auth_latency_ms": 0.0192,
+      "tool_latency_ms": 0.0,
+      "total_latency_ms": 0.0225,
+      "error": "LEASH auth denied"
+    },
+    {
+      "timestamp": 1775504603.5033689,
+      "agent_id": "CodeAnalyzer",
+      "tool": "read_file",
+      "success": false,
+      "auth_latency_ms": 0.0129,
+      "tool_latency_ms": 0.0,
+      "total_latency_ms": 0.016,
+      "error": "LEASH auth denied"
+    },
+    {
+      "timestamp": 1775504603.505205,
+      "agent_id": "SQLAgent",
+      "tool": "query_db",
+      "success": false,
+      "auth_latency_ms": 0.007,
+      "tool_latency_ms": 0.0,
+      "total_latency_ms": 0.0088,
+      "error": "LEASH auth denied"
+    },
+    {
+      "timestamp": 1775504603.5505888,
+      "agent_id": "DeployAgent",
+      "tool": "run_command",
+      "success": false,
+      "auth_latency_ms": 0.0155,
+      "tool_latency_ms": 0.0,
+      "total_latency_ms": 0.0186,
+      "error": "LEASH auth denied"
+    },
+    {
+      "timestamp": 1775504604.7285419,
+      "agent_id": "CodeReviewer",
+      "tool": "read_file",
+      "success": false,
+      "auth_latency_ms": 0.0105,
+      "tool_latency_ms": 0.0,
+      "total_latency_ms": 0.0122,
+      "error": "LEASH auth denied"
+    },
+    {
+      "timestamp": 1775504604.99632,
+      "agent_id": "CodeWriter",
+      "tool": "write_file",
+      "success": false,
+      "auth_latency_ms": 0.0087,
+      "tool_latency_ms": 0.0,
+      "total_latency_ms": 0.0103,
+      "error": "LEASH auth denied"
+    },
+    {
+      "timestamp": 1775504605.006835,
+      "agent_id": "CodeAnalyzer",
+      "tool": "read_file",
+      "success": false,
+      "auth_latency_ms": 0.0086,
+      "tool_latency_ms": 0.0,
+      "total_latency_ms": 0.0102,
+      "error": "LEASH auth denied"
+    },
+    {
+      "timestamp": 1775504605.010179,
+      "agent_id": "SQLAgent",
+      "tool": "query_db",
+      "success": false,
+      "auth_latency_ms": 0.0048,
+      "tool_latency_ms": 0.0,
+      "total_latency_ms": 0.0055,
+      "error": "LEASH auth denied"
+    },
+    {
+      "timestamp": 1775504605.0531042,
+      "agent_id": "DeployAgent",
+      "tool": "run_command",
+      "success": false,
+      "auth_latency_ms": 0.0127,
+      "tool_latency_ms": 0.0,
+      "total_latency_ms": 0.0149,
+      "error": "LEASH auth denied"
+    },
+    {
+      "timestamp": 1775504606.230869,
+      "agent_id": "CodeReviewer",
+      "tool": "read_file",
+      "success": false,
+      "auth_latency_ms": 0.023,
+      "tool_latency_ms": 0.0,
+      "total_latency_ms": 0.0263,
+      "error": "LEASH auth denied"
+    },
+    {
+      "timestamp": 1775504606.501472,
+      "agent_id": "CodeWriter",
+      "tool": "write_file",
+      "success": false,
+      "auth_latency_ms": 0.028,
+      "tool_latency_ms": 0.0,
+      "total_latency_ms": 0.0331,
+      "error": "LEASH auth denied"
+    },
+    {
+      "timestamp": 1775504606.5119429,
+      "agent_id": "CodeAnalyzer",
+      "tool": "read_file",
+      "success": false,
+      "auth_latency_ms": 0.0156,
+      "tool_latency_ms": 0.0,
+      "total_latency_ms": 0.0191,
+      "error": "LEASH auth denied"
+    },
+    {
+      "timestamp": 1775504606.5142038,
+      "agent_id": "SQLAgent",
+      "tool": "query_db",
+      "success": false,
+      "auth_latency_ms": 0.0125,
+      "tool_latency_ms": 0.0,
+      "total_latency_ms": 0.0147,
+      "error": "LEASH auth denied"
+    },
+    {
+      "timestamp": 1775504606.558181,
+      "agent_id": "DeployAgent",
+      "tool": "run_command",
+      "success": false,
+      "auth_latency_ms": 0.0141,
+      "tool_latency_ms": 0.0,
+      "total_latency_ms": 0.0165,
+      "error": "LEASH auth denied"
+    },
+    {
+      "timestamp": 1775504607.7353768,
+      "agent_id": "CodeReviewer",
+      "tool": "read_file",
+      "success": false,
+      "auth_latency_ms": 0.031,
+      "tool_latency_ms": 0.0,
+      "total_latency_ms": 0.0367,
+      "error": "LEASH auth denied"
+    },
+    {
+      "timestamp": 1775504608.005051,
+      "agent_id": "CodeWriter",
+      "tool": "write_file",
+      "success": false,
+      "auth_latency_ms": 0.022,
+      "tool_latency_ms": 0.0,
+      "total_latency_ms": 0.0259,
+      "error": "LEASH auth denied"
+    },
+    {
+      "timestamp": 1775504608.014956,
+      "agent_id": "SQLAgent",
+      "tool": "query_db",
+      "success": false,
+      "auth_latency_ms": 0.0139,
+      "tool_latency_ms": 0.0,
+      "total_latency_ms": 0.0168,
+      "error": "LEASH auth denied"
+    },
+    {
+      "timestamp": 1775504608.016613,
+      "agent_id": "CodeAnalyzer",
+      "tool": "read_file",
+      "success": false,
+      "auth_latency_ms": 0.0215,
+      "tool_latency_ms": 0.0,
+      "total_latency_ms": 0.0231,
+      "error": "LEASH auth denied"
+    },
+    {
+      "timestamp": 1775504608.063345,
+      "agent_id": "DeployAgent",
+      "tool": "run_command",
+      "success": false,
+      "auth_latency_ms": 0.036,
+      "tool_latency_ms": 0.0,
+      "total_latency_ms": 0.0409,
+      "error": "LEASH auth denied"
+    },
+    {
+      "timestamp": 1775504609.236844,
+      "agent_id": "CodeReviewer",
+      "tool": "read_file",
+      "success": false,
+      "auth_latency_ms": 0.011,
+      "tool_latency_ms": 0.0,
+      "total_latency_ms": 0.0128,
+      "error": "LEASH auth denied"
+    },
+    {
+      "timestamp": 1775504609.508432,
+      "agent_id": "CodeWriter",
+      "tool": "write_file",
+      "success": false,
+      "auth_latency_ms": 0.0224,
+      "tool_latency_ms": 0.0,
+      "total_latency_ms": 0.0266,
+      "error": "LEASH auth denied"
+    },
+    {
+      "timestamp": 1775504609.520103,
+      "agent_id": "SQLAgent",
+      "tool": "query_db",
+      "success": false,
+      "auth_latency_ms": 0.0209,
+      "tool_latency_ms": 0.0,
+      "total_latency_ms": 0.0245,
+      "error": "LEASH auth denied"
+    },
+    {
+      "timestamp": 1775504609.520163,
+      "agent_id": "CodeAnalyzer",
+      "tool": "read_file",
+      "success": false,
+      "auth_latency_ms": 0.005,
+      "tool_latency_ms": 0.0,
+      "total_latency_ms": 0.0064,
+      "error": "LEASH auth denied"
+    },
+    {
+      "timestamp": 1775504609.565003,
+      "agent_id": "DeployAgent",
+      "tool": "run_command",
+      "success": false,
+      "auth_latency_ms": 0.0237,
+      "tool_latency_ms": 0.0,
+      "total_latency_ms": 0.0273,
+      "error": "LEASH auth denied"
+    },
+    {
+      "timestamp": 1775504610.741916,
+      "agent_id": "CodeReviewer",
+      "tool": "read_file",
+      "success": false,
+      "auth_latency_ms": 0.0145,
+      "tool_latency_ms": 0.0,
+      "total_latency_ms": 0.0164,
+      "error": "LEASH auth denied"
+    },
+    {
+      "timestamp": 1775504611.0099561,
+      "agent_id": "CodeWriter",
+      "tool": "write_file",
+      "success": false,
+      "auth_latency_ms": 0.0107,
+      "tool_latency_ms": 0.0,
+      "total_latency_ms": 0.0127,
+      "error": "LEASH auth denied"
+    },
+    {
+      "timestamp": 1775504611.024653,
+      "agent_id": "SQLAgent",
+      "tool": "query_db",
+      "success": false,
+      "auth_latency_ms": 0.0087,
+      "tool_latency_ms": 0.0,
+      "total_latency_ms": 0.01,
+      "error": "LEASH auth denied"
+    },
+    {
+      "timestamp": 1775504611.024678,
+      "agent_id": "CodeAnalyzer",
+      "tool": "read_file",
+      "success": false,
+      "auth_latency_ms": 0.0025,
+      "tool_latency_ms": 0.0,
+      "total_latency_ms": 0.003,
+      "error": "LEASH auth denied"
+    },
+    {
+      "timestamp": 1775504611.069509,
+      "agent_id": "DeployAgent",
+      "tool": "run_command",
+      "success": false,
+      "auth_latency_ms": 0.0101,
+      "tool_latency_ms": 0.0,
+      "total_latency_ms": 0.0118,
+      "error": "LEASH auth denied"
+    },
+    {
+      "timestamp": 1775504612.245748,
+      "agent_id": "CodeReviewer",
+      "tool": "read_file",
+      "success": false,
+      "auth_latency_ms": 0.0176,
+      "tool_latency_ms": 0.0,
+      "total_latency_ms": 0.0204,
+      "error": "LEASH auth denied"
+    },
+    {
+      "timestamp": 1775504612.512326,
+      "agent_id": "CodeWriter",
+      "tool": "write_file",
+      "success": false,
+      "auth_latency_ms": 0.009,
+      "tool_latency_ms": 0.0,
+      "total_latency_ms": 0.0108,
+      "error": "LEASH auth denied"
+    },
+    {
+      "timestamp": 1775504612.527603,
+      "agent_id": "SQLAgent",
+      "tool": "query_db",
+      "success": false,
+      "auth_latency_ms": 0.0118,
+      "tool_latency_ms": 0.0,
+      "total_latency_ms": 0.0138,
+      "error": "LEASH auth denied"
+    },
+    {
+      "timestamp": 1775504612.5276768,
+      "agent_id": "CodeAnalyzer",
+      "tool": "read_file",
+      "success": false,
+      "auth_latency_ms": 0.0052,
+      "tool_latency_ms": 0.0,
+      "total_latency_ms": 0.0064,
+      "error": "LEASH auth denied"
+    },
+    {
+      "timestamp": 1775504612.570933,
+      "agent_id": "DeployAgent",
+      "tool": "run_command",
+      "success": false,
+      "auth_latency_ms": 0.0118,
+      "tool_latency_ms": 0.0,
+      "total_latency_ms": 0.014,
+      "error": "LEASH auth denied"
+    },
+    {
+      "timestamp": 1775504613.750821,
+      "agent_id": "CodeReviewer",
+      "tool": "read_file",
+      "success": false,
+      "auth_latency_ms": 0.0179,
+      "tool_latency_ms": 0.0,
+      "total_latency_ms": 0.0208,
+      "error": "LEASH auth denied"
+    },
+    {
+      "timestamp": 1775504614.017465,
+      "agent_id": "CodeWriter",
+      "tool": "write_file",
+      "success": false,
+      "auth_latency_ms": 0.0227,
+      "tool_latency_ms": 0.0,
+      "total_latency_ms": 0.0271,
+      "error": "LEASH auth denied"
+    },
+    {
+      "timestamp": 1775504614.0326982,
+      "agent_id": "SQLAgent",
+      "tool": "query_db",
+      "success": false,
+      "auth_latency_ms": 0.0229,
+      "tool_latency_ms": 0.0,
+      "total_latency_ms": 0.026,
+      "error": "LEASH auth denied"
+    },
+    {
+      "timestamp": 1775504614.0327559,
+      "agent_id": "CodeAnalyzer",
+      "tool": "read_file",
+      "success": false,
+      "auth_latency_ms": 0.0053,
+      "tool_latency_ms": 0.0,
+      "total_latency_ms": 0.0066,
+      "error": "LEASH auth denied"
+    },
+    {
+      "timestamp": 1775504614.075903,
+      "agent_id": "DeployAgent",
+      "tool": "run_command",
+      "success": false,
+      "auth_latency_ms": 0.019,
+      "tool_latency_ms": 0.0,
+      "total_latency_ms": 0.0222,
+      "error": "LEASH auth denied"
+    },
+    {
+      "timestamp": 1775504615.251047,
+      "agent_id": "CodeReviewer",
+      "tool": "read_file",
+      "success": false,
+      "auth_latency_ms": 0.0137,
+      "tool_latency_ms": 0.0,
+      "total_latency_ms": 0.0163,
+      "error": "LEASH auth denied"
+    },
+    {
+      "timestamp": 1775504615.519902,
+      "agent_id": "CodeWriter",
+      "tool": "write_file",
+      "success": false,
+      "auth_latency_ms": 0.0105,
+      "tool_latency_ms": 0.0,
+      "total_latency_ms": 0.0122,
+      "error": "LEASH auth denied"
+    },
+    {
+      "timestamp": 1775504615.535281,
+      "agent_id": "SQLAgent",
+      "tool": "query_db",
+      "success": false,
+      "auth_latency_ms": 0.006,
+      "tool_latency_ms": 0.0,
+      "total_latency_ms": 0.0071,
+      "error": "LEASH auth denied"
+    },
+    {
+      "timestamp": 1775504615.5353248,
+      "agent_id": "CodeAnalyzer",
+      "tool": "read_file",
+      "success": false,
+      "auth_latency_ms": 0.0023,
+      "tool_latency_ms": 0.0,
+      "total_latency_ms": 0.0025,
+      "error": "LEASH auth denied"
+    },
+    {
+      "timestamp": 1775504615.577953,
+      "agent_id": "DeployAgent",
+      "tool": "run_command",
+      "success": false,
+      "auth_latency_ms": 0.0064,
+      "tool_latency_ms": 0.0,
+      "total_latency_ms": 0.0077,
+      "error": "LEASH auth denied"
+    },
+    {
+      "timestamp": 1775504616.7526221,
+      "agent_id": "CodeReviewer",
+      "tool": "read_file",
+      "success": false,
+      "auth_latency_ms": 0.0128,
+      "tool_latency_ms": 0.0,
+      "total_latency_ms": 0.0151,
+      "error": "LEASH auth denied"
+    },
+    {
+      "timestamp": 1775504617.02497,
+      "agent_id": "CodeWriter",
+      "tool": "write_file",
+      "success": false,
+      "auth_latency_ms": 0.0085,
+      "tool_latency_ms": 0.0,
+      "total_latency_ms": 0.0102,
+      "error": "LEASH auth denied"
+    },
+    {
+      "timestamp": 1775504617.035918,
+      "agent_id": "SQLAgent",
+      "tool": "query_db",
+      "success": false,
+      "auth_latency_ms": 0.0542,
+      "tool_latency_ms": 0.0,
+      "total_latency_ms": 0.0575,
+      "error": "LEASH auth denied"
+    },
+    {
+      "timestamp": 1775504617.035986,
+      "agent_id": "CodeAnalyzer",
+      "tool": "read_file",
+      "success": false,
+      "auth_latency_ms": 0.0068,
+      "tool_latency_ms": 0.0,
+      "total_latency_ms": 0.0089,
+      "error": "LEASH auth denied"
+    },
+    {
+      "timestamp": 1775504617.078203,
+      "agent_id": "DeployAgent",
+      "tool": "run_command",
+      "success": false,
+      "auth_latency_ms": 0.0112,
+      "tool_latency_ms": 0.0,
+      "total_latency_ms": 0.0132,
+      "error": "LEASH auth denied"
+    },
+    {
+      "timestamp": 1775504618.254741,
+      "agent_id": "CodeReviewer",
+      "tool": "read_file",
+      "success": false,
+      "auth_latency_ms": 0.0255,
+      "tool_latency_ms": 0.0,
+      "total_latency_ms": 0.0298,
+      "error": "LEASH auth denied"
+    },
+    {
+      "timestamp": 1775504618.53015,
+      "agent_id": "CodeWriter",
+      "tool": "write_file",
+      "success": false,
+      "auth_latency_ms": 0.0369,
+      "tool_latency_ms": 0.0,
+      "total_latency_ms": 0.043,
+      "error": "LEASH auth denied"
+    },
+    {
+      "timestamp": 1775504618.540131,
+      "agent_id": "SQLAgent",
+      "tool": "query_db",
+      "success": false,
+      "auth_latency_ms": 0.0193,
+      "tool_latency_ms": 0.0,
+      "total_latency_ms": 0.0237,
+      "error": "LEASH auth denied"
+    },
+    {
+      "timestamp": 1775504618.5402439,
+      "agent_id": "CodeAnalyzer",
+      "tool": "read_file",
+      "success": false,
+      "auth_latency_ms": 0.0145,
+      "tool_latency_ms": 0.0,
+      "total_latency_ms": 0.0183,
+      "error": "LEASH auth denied"
+    },
+    {
+      "timestamp": 1775504618.5832908,
+      "agent_id": "DeployAgent",
+      "tool": "run_command",
+      "success": false,
+      "auth_latency_ms": 0.0178,
+      "tool_latency_ms": 0.0,
+      "total_latency_ms": 0.021,
+      "error": "LEASH auth denied"
+    },
+    {
+      "timestamp": 1775504619.755969,
+      "agent_id": "CodeReviewer",
+      "tool": "read_file",
+      "success": false,
+      "auth_latency_ms": 0.0255,
+      "tool_latency_ms": 0.0,
+      "total_latency_ms": 0.0298,
+      "error": "LEASH auth denied"
+    },
+    {
+      "timestamp": 1775504620.0350342,
+      "agent_id": "CodeWriter",
+      "tool": "write_file",
+      "success": false,
+      "auth_latency_ms": 0.0224,
+      "tool_latency_ms": 0.0,
+      "total_latency_ms": 0.0268,
+      "error": "LEASH auth denied"
+    },
+    {
+      "timestamp": 1775504620.040286,
+      "agent_id": "SQLAgent",
+      "tool": "query_db",
+      "success": false,
+      "auth_latency_ms": 0.0213,
+      "tool_latency_ms": 0.0,
+      "total_latency_ms": 0.0256,
+      "error": "LEASH auth denied"
+    },
+    {
+      "timestamp": 1775504620.044318,
+      "agent_id": "CodeAnalyzer",
+      "tool": "read_file",
+      "success": false,
+      "auth_latency_ms": 0.0166,
+      "tool_latency_ms": 0.0,
+      "total_latency_ms": 0.0205,
+      "error": "LEASH auth denied"
+    },
+    {
+      "timestamp": 1775504620.0880551,
+      "agent_id": "DeployAgent",
+      "tool": "run_command",
+      "success": false,
+      "auth_latency_ms": 0.0293,
+      "tool_latency_ms": 0.0,
+      "total_latency_ms": 0.0348,
+      "error": "LEASH auth denied"
+    },
+    {
+      "timestamp": 1775504621.260418,
+      "agent_id": "CodeReviewer",
+      "tool": "read_file",
+      "success": false,
+      "auth_latency_ms": 0.0098,
+      "tool_latency_ms": 0.0,
+      "total_latency_ms": 0.0115,
+      "error": "LEASH auth denied"
+    },
+    {
+      "timestamp": 1775504621.5380511,
+      "agent_id": "CodeWriter",
+      "tool": "write_file",
+      "success": false,
+      "auth_latency_ms": 0.009,
+      "tool_latency_ms": 0.0,
+      "total_latency_ms": 0.0107,
+      "error": "LEASH auth denied"
+    },
+    {
+      "timestamp": 1775504621.543245,
+      "agent_id": "SQLAgent",
+      "tool": "query_db",
+      "success": false,
+      "auth_latency_ms": 0.011,
+      "tool_latency_ms": 0.0,
+      "total_latency_ms": 0.0128,
+      "error": "LEASH auth denied"
+    },
+    {
+      "timestamp": 1775504621.5486999,
+      "agent_id": "CodeAnalyzer",
+      "tool": "read_file",
+      "success": false,
+      "auth_latency_ms": 0.0081,
+      "tool_latency_ms": 0.0,
+      "total_latency_ms": 0.0098,
+      "error": "LEASH auth denied"
+    },
+    {
+      "timestamp": 1775504621.589521,
+      "agent_id": "DeployAgent",
+      "tool": "run_command",
+      "success": false,
+      "auth_latency_ms": 0.0107,
+      "tool_latency_ms": 0.0,
+      "total_latency_ms": 0.0125,
+      "error": "LEASH auth denied"
+    },
+    {
+      "timestamp": 1775504622.7634938,
+      "agent_id": "CodeReviewer",
+      "tool": "read_file",
+      "success": false,
+      "auth_latency_ms": 0.017,
+      "tool_latency_ms": 0.0,
+      "total_latency_ms": 0.0197,
+      "error": "LEASH auth denied"
+    },
+    {
+      "timestamp": 1775504623.040174,
+      "agent_id": "CodeWriter",
+      "tool": "write_file",
+      "success": false,
+      "auth_latency_ms": 0.0139,
+      "tool_latency_ms": 0.0,
+      "total_latency_ms": 0.0165,
+      "error": "LEASH auth denied"
+    },
+    {
+      "timestamp": 1775504623.046229,
+      "agent_id": "SQLAgent",
+      "tool": "query_db",
+      "success": false,
+      "auth_latency_ms": 0.0102,
+      "tool_latency_ms": 0.0,
+      "total_latency_ms": 0.0121,
+      "error": "LEASH auth denied"
+    },
+    {
+      "timestamp": 1775504623.052992,
+      "agent_id": "CodeAnalyzer",
+      "tool": "read_file",
+      "success": false,
+      "auth_latency_ms": 0.0092,
+      "tool_latency_ms": 0.0,
+      "total_latency_ms": 0.0109,
+      "error": "LEASH auth denied"
+    },
+    {
+      "timestamp": 1775504623.090158,
+      "agent_id": "DeployAgent",
+      "tool": "run_command",
+      "success": false,
+      "auth_latency_ms": 0.015,
+      "tool_latency_ms": 0.0,
+      "total_latency_ms": 0.0174,
+      "error": "LEASH auth denied"
+    },
+    {
+      "timestamp": 1775504624.266793,
+      "agent_id": "CodeReviewer",
+      "tool": "read_file",
+      "success": false,
+      "auth_latency_ms": 0.022,
+      "tool_latency_ms": 0.0,
+      "total_latency_ms": 0.0255,
+      "error": "LEASH auth denied"
+    },
+    {
+      "timestamp": 1775504624.543263,
+      "agent_id": "CodeWriter",
+      "tool": "write_file",
+      "success": false,
+      "auth_latency_ms": 0.0251,
+      "tool_latency_ms": 0.0,
+      "total_latency_ms": 0.0298,
+      "error": "LEASH auth denied"
+    },
+    {
+      "timestamp": 1775504624.551174,
+      "agent_id": "SQLAgent",
+      "tool": "query_db",
+      "success": false,
+      "auth_latency_ms": 0.0162,
+      "tool_latency_ms": 0.0,
+      "total_latency_ms": 0.019,
+      "error": "LEASH auth denied"
+    },
+    {
+      "timestamp": 1775504624.5551438,
+      "agent_id": "CodeAnalyzer",
+      "tool": "read_file",
+      "success": false,
+      "auth_latency_ms": 0.0129,
+      "tool_latency_ms": 0.0,
+      "total_latency_ms": 0.0155,
+      "error": "LEASH auth denied"
+    },
+    {
+      "timestamp": 1775504624.590367,
+      "agent_id": "DeployAgent",
+      "tool": "run_command",
+      "success": false,
+      "auth_latency_ms": 0.0223,
+      "tool_latency_ms": 0.0,
+      "total_latency_ms": 0.0265,
+      "error": "LEASH auth denied"
+    },
+    {
+      "timestamp": 1775504625.768279,
+      "agent_id": "CodeReviewer",
+      "tool": "read_file",
+      "success": false,
+      "auth_latency_ms": 0.0169,
+      "tool_latency_ms": 0.0,
+      "total_latency_ms": 0.0189,
+      "error": "LEASH auth denied"
+    },
+    {
+      "timestamp": 1775504626.0464609,
+      "agent_id": "CodeWriter",
+      "tool": "write_file",
+      "success": false,
+      "auth_latency_ms": 0.0278,
+      "tool_latency_ms": 0.0,
+      "total_latency_ms": 0.0317,
+      "error": "LEASH auth denied"
+    },
+    {
+      "timestamp": 1775504626.0547378,
+      "agent_id": "SQLAgent",
+      "tool": "query_db",
+      "success": false,
+      "auth_latency_ms": 0.0171,
+      "tool_latency_ms": 0.0,
+      "total_latency_ms": 0.0199,
+      "error": "LEASH auth denied"
+    },
+    {
+      "timestamp": 1775504626.059458,
+      "agent_id": "CodeAnalyzer",
+      "tool": "read_file",
+      "success": false,
+      "auth_latency_ms": 0.0067,
+      "tool_latency_ms": 0.0,
+      "total_latency_ms": 0.0083,
+      "error": "LEASH auth denied"
+    },
+    {
+      "timestamp": 1775504626.094696,
+      "agent_id": "DeployAgent",
+      "tool": "run_command",
+      "success": false,
+      "auth_latency_ms": 0.0155,
+      "tool_latency_ms": 0.0,
+      "total_latency_ms": 0.0184,
+      "error": "LEASH auth denied"
+    },
+    {
+      "timestamp": 1775504627.2733572,
+      "agent_id": "CodeReviewer",
+      "tool": "read_file",
+      "success": false,
+      "auth_latency_ms": 0.0149,
+      "tool_latency_ms": 0.0,
+      "total_latency_ms": 0.0178,
+      "error": "LEASH auth denied"
+    },
+    {
+      "timestamp": 1775504627.5507011,
+      "agent_id": "CodeWriter",
+      "tool": "write_file",
+      "success": false,
+      "auth_latency_ms": 0.0093,
+      "tool_latency_ms": 0.0,
+      "total_latency_ms": 0.011,
+      "error": "LEASH auth denied"
+    },
+    {
+      "timestamp": 1775504627.558198,
+      "agent_id": "SQLAgent",
+      "tool": "query_db",
+      "success": false,
+      "auth_latency_ms": 0.0077,
+      "tool_latency_ms": 0.0,
+      "total_latency_ms": 0.0089,
+      "error": "LEASH auth denied"
+    },
+    {
+      "timestamp": 1775504627.559846,
+      "agent_id": "CodeAnalyzer",
+      "tool": "read_file",
+      "success": false,
+      "auth_latency_ms": 0.0031,
+      "tool_latency_ms": 0.0,
+      "total_latency_ms": 0.0036,
+      "error": "LEASH auth denied"
+    },
+    {
+      "timestamp": 1775504627.597683,
+      "agent_id": "DeployAgent",
+      "tool": "run_command",
+      "success": false,
+      "auth_latency_ms": 0.0053,
+      "tool_latency_ms": 0.0,
+      "total_latency_ms": 0.0064,
+      "error": "LEASH auth denied"
+    }
+  ]
+}

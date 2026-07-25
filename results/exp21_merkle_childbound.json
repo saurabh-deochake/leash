@@ -1,0 +1,88 @@
+{
+  "experiment": "exp21_merkle_childbound",
+  "description": "Merkle child-bound heartbeats: O(1) parent signing, O(log N) per-child inclusion proof, sound selective revocation.",
+  "primitives": "ECDSA-secp256k1 signatures, SHA-256 Merkle tree",
+  "curve": "secp256k1",
+  "results": [
+    {
+      "n": 10,
+      "merkle_build_ms": 0.0192,
+      "merkle_sign_ms": 0.6583,
+      "merkle_parent_total_ms": 0.6775,
+      "naive_sign_ms": 6.7105,
+      "signing_speedup_x": 9.9,
+      "proof_path_len": 4,
+      "proof_incremental_bytes": 128,
+      "proof_selfcontained_bytes": 224,
+      "proof_gen_ms": 0.0012,
+      "verify_full_ms": 2.6008,
+      "verify_amortized_ms": 0.0042,
+      "excluded_child_rejected": true
+    },
+    {
+      "n": 50,
+      "merkle_build_ms": 0.0795,
+      "merkle_sign_ms": 0.6524,
+      "merkle_parent_total_ms": 0.7319,
+      "naive_sign_ms": 33.1639,
+      "signing_speedup_x": 45.3,
+      "proof_path_len": 6,
+      "proof_incremental_bytes": 192,
+      "proof_selfcontained_bytes": 288,
+      "proof_gen_ms": 0.0009,
+      "verify_full_ms": 2.5819,
+      "verify_amortized_ms": 0.0048,
+      "excluded_child_rejected": true
+    },
+    {
+      "n": 100,
+      "merkle_build_ms": 0.1565,
+      "merkle_sign_ms": 0.6591,
+      "merkle_parent_total_ms": 0.8156,
+      "naive_sign_ms": 65.852,
+      "signing_speedup_x": 80.7,
+      "proof_path_len": 7,
+      "proof_incremental_bytes": 224,
+      "proof_selfcontained_bytes": 320,
+      "proof_gen_ms": 0.001,
+      "verify_full_ms": 2.5844,
+      "verify_amortized_ms": 0.0055,
+      "excluded_child_rejected": true
+    },
+    {
+      "n": 500,
+      "merkle_build_ms": 0.7577,
+      "merkle_sign_ms": 0.6733,
+      "merkle_parent_total_ms": 1.431,
+      "naive_sign_ms": 329.9906,
+      "signing_speedup_x": 230.6,
+      "proof_path_len": 9,
+      "proof_incremental_bytes": 288,
+      "proof_selfcontained_bytes": 384,
+      "proof_gen_ms": 0.0013,
+      "verify_full_ms": 2.5877,
+      "verify_amortized_ms": 0.006,
+      "excluded_child_rejected": true
+    },
+    {
+      "n": 1000,
+      "merkle_build_ms": 1.4022,
+      "merkle_sign_ms": 0.658,
+      "merkle_parent_total_ms": 2.0602,
+      "naive_sign_ms": 661.0795,
+      "signing_speedup_x": 320.9,
+      "proof_path_len": 10,
+      "proof_incremental_bytes": 320,
+      "proof_selfcontained_bytes": 416,
+      "proof_gen_ms": 0.0015,
+      "verify_full_ms": 2.5928,
+      "verify_amortized_ms": 0.0068,
+      "excluded_child_rejected": true
+    }
+  ],
+  "notes": {
+    "signing": "Merkle signs ONE root per epoch (O(1)); naive signs one heartbeat per child (O(N)).",
+    "proof_size": "Incremental proof = ceil(log2 N) x 32B sibling path (root+signature broadcast once per epoch).",
+    "selective_revocation": "excluded_child_rejected=true confirms an excluded child's stale inclusion path fails under the rebuilt root (Dolev-Yao sound)."
+  }
+}

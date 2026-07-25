@@ -1,0 +1,58 @@
+[
+  {
+    "n": 10,
+    "verify_mean_ms": 0.209,
+    "verify_p99_ms": 0.249,
+    "throughput_vps": 4781.0,
+    "all_revoked": true,
+    "revoked_count": 10
+  },
+  {
+    "n": 50,
+    "verify_mean_ms": 0.205,
+    "verify_p99_ms": 0.242,
+    "throughput_vps": 4885.0,
+    "all_revoked": true,
+    "revoked_count": 50
+  },
+  {
+    "n": 100,
+    "verify_mean_ms": 0.205,
+    "verify_p99_ms": 0.246,
+    "throughput_vps": 4887.0,
+    "all_revoked": true,
+    "revoked_count": 100
+  },
+  {
+    "n": 500,
+    "verify_mean_ms": 0.206,
+    "verify_p99_ms": 0.261,
+    "throughput_vps": 4859.0,
+    "all_revoked": true,
+    "revoked_count": 500
+  },
+  {
+    "n": 1000,
+    "verify_mean_ms": 0.209,
+    "verify_p99_ms": 0.256,
+    "throughput_vps": 4787.0,
+    "all_revoked": true,
+    "revoked_count": 1000
+  },
+  {
+    "n": 5000,
+    "verify_mean_ms": 0.209,
+    "verify_p99_ms": 0.278,
+    "throughput_vps": 4787.0,
+    "all_revoked": true,
+    "revoked_count": 5000
+  },
+  {
+    "n": 10000,
+    "verify_mean_ms": 0.208,
+    "verify_p99_ms": 0.279,
+    "throughput_vps": 4798.0,
+    "all_revoked": true,
+    "revoked_count": 10000
+  }
+]

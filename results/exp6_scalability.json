@@ -1,0 +1,175 @@
+{
+  "parent_throughput": [
+    {
+      "swarm_size": 10,
+      "derivation_total_ms": 13.3,
+      "derivation_per_child_ms": 1.33,
+      "hb_gen_mean_ms": 0.733,
+      "hb_gen_p99_ms": 2.573
+    },
+    {
+      "swarm_size": 50,
+      "derivation_total_ms": 64.95,
+      "derivation_per_child_ms": 1.299,
+      "hb_gen_mean_ms": 0.689,
+      "hb_gen_p99_ms": 0.869
+    },
+    {
+      "swarm_size": 100,
+      "derivation_total_ms": 130.58,
+      "derivation_per_child_ms": 1.306,
+      "hb_gen_mean_ms": 0.699,
+      "hb_gen_p99_ms": 0.812
+    },
+    {
+      "swarm_size": 500,
+      "derivation_total_ms": 668.3,
+      "derivation_per_child_ms": 1.337,
+      "hb_gen_mean_ms": 0.697,
+      "hb_gen_p99_ms": 0.891
+    },
+    {
+      "swarm_size": 1000,
+      "derivation_total_ms": 1313.28,
+      "derivation_per_child_ms": 1.313,
+      "hb_gen_mean_ms": 0.696,
+      "hb_gen_p99_ms": 0.787
+    }
+  ],
+  "concurrent_verification": [
+    {
+      "swarm_size": 10,
+      "verify_mean_ms": 5.646,
+      "verify_p99_ms": 5.981,
+      "verify_std_ms": 0.242,
+      "total_burst_ms": 56.46,
+      "throughput_verifications_per_sec": 177.1
+    },
+    {
+      "swarm_size": 50,
+      "verify_mean_ms": 5.388,
+      "verify_p99_ms": 6.261,
+      "verify_std_ms": 0.198,
+      "total_burst_ms": 269.41,
+      "throughput_verifications_per_sec": 185.6
+    },
+    {
+      "swarm_size": 100,
+      "verify_mean_ms": 5.287,
+      "verify_p99_ms": 7.391,
+      "verify_std_ms": 0.23,
+      "total_burst_ms": 528.75,
+      "throughput_verifications_per_sec": 189.1
+    },
+    {
+      "swarm_size": 500,
+      "verify_mean_ms": 5.269,
+      "verify_p99_ms": 5.586,
+      "verify_std_ms": 0.183,
+      "total_burst_ms": 2634.93,
+      "throughput_verifications_per_sec": 189.8
+    },
+    {
+      "swarm_size": 1000,
+      "verify_mean_ms": 5.402,
+      "verify_p99_ms": 5.745,
+      "verify_std_ms": 0.126,
+      "total_burst_ms": 5402.59,
+      "throughput_verifications_per_sec": 185.1
+    }
+  ],
+  "proof_creation": [
+    {
+      "swarm_size": 10,
+      "create_mean_ms": 0.69,
+      "create_p99_ms": 0.788,
+      "create_std_ms": 0.056,
+      "first_child_ms": 0.788,
+      "last_child_ms": 0.645
+    },
+    {
+      "swarm_size": 50,
+      "create_mean_ms": 0.679,
+      "create_p99_ms": 0.784,
+      "create_std_ms": 0.038,
+      "first_child_ms": 0.723,
+      "last_child_ms": 0.651
+    },
+    {
+      "swarm_size": 100,
+      "create_mean_ms": 0.695,
+      "create_p99_ms": 0.793,
+      "create_std_ms": 0.043,
+      "first_child_ms": 0.675,
+      "last_child_ms": 0.729
+    },
+    {
+      "swarm_size": 500,
+      "create_mean_ms": 0.688,
+      "create_p99_ms": 0.804,
+      "create_std_ms": 0.042,
+      "first_child_ms": 0.666,
+      "last_child_ms": 0.688
+    },
+    {
+      "swarm_size": 1000,
+      "create_mean_ms": 0.689,
+      "create_p99_ms": 0.807,
+      "create_std_ms": 0.043,
+      "first_child_ms": 0.618,
+      "last_child_ms": 0.706
+    }
+  ],
+  "revocation_propagation": [
+    {
+      "swarm_size": 10,
+      "initial_authenticated": 10,
+      "denied_after_expiry": 10,
+      "all_denied": true,
+      "elapsed_s": 9.01,
+      "check_all_ms": 7.03,
+      "theoretical_bound_s": 8.0,
+      "passed": true
+    },
+    {
+      "swarm_size": 50,
+      "initial_authenticated": 50,
+      "denied_after_expiry": 50,
+      "all_denied": true,
+      "elapsed_s": 9.04,
+      "check_all_ms": 36.29,
+      "theoretical_bound_s": 8.0,
+      "passed": true
+    },
+    {
+      "swarm_size": 100,
+      "initial_authenticated": 100,
+      "denied_after_expiry": 100,
+      "all_denied": true,
+      "elapsed_s": 9.08,
+      "check_all_ms": 70.72,
+      "theoretical_bound_s": 8.0,
+      "passed": true
+    },
+    {
+      "swarm_size": 500,
+      "initial_authenticated": 500,
+      "denied_after_expiry": 500,
+      "all_denied": true,
+      "elapsed_s": 9.36,
+      "check_all_ms": 363.08,
+      "theoretical_bound_s": 8.0,
+      "passed": true
+    },
+    {
+      "swarm_size": 1000,
+      "initial_authenticated": 1000,
+      "denied_after_expiry": 1000,
+      "all_denied": true,
+      "elapsed_s": 9.7,
+      "check_all_ms": 702.81,
+      "theoretical_bound_s": 8.0,
+      "passed": true
+    }
+  ]
+}

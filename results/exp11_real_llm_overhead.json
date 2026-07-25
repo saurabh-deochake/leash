@@ -1,0 +1,179 @@
+{
+  "experiment": "exp11_real_llm_overhead",
+  "model": "gpt-4o-mini-2024-07-18",
+  "iterations_per_task": 5,
+  "timestamp": 1775505224.137622,
+  "tasks": [
+    {
+      "task": "T1: single_read",
+      "baseline": {
+        "task": "T1: single_read",
+        "leash": false,
+        "iterations": 5,
+        "mean_ms": 1489.8,
+        "median_ms": 1501.65,
+        "stdev_ms": 147.62,
+        "p99_ms": 1646.3,
+        "min_ms": 1252.81,
+        "max_ms": 1646.3,
+        "auth_overhead_mean_ms": 0.0,
+        "errors": 0,
+        "error_details": []
+      },
+      "leash": {
+        "task": "T1: single_read",
+        "leash": true,
+        "iterations": 5,
+        "mean_ms": 1902.72,
+        "median_ms": 1842.17,
+        "stdev_ms": 457.01,
+        "p99_ms": 2622.41,
+        "min_ms": 1390.63,
+        "max_ms": 2622.41,
+        "auth_overhead_mean_ms": 6.5963,
+        "errors": 0,
+        "error_details": []
+      },
+      "overhead_ms": 412.92,
+      "overhead_pct": 27.7165
+    },
+    {
+      "task": "T2: read_and_write",
+      "baseline": {
+        "task": "T2: read_and_write",
+        "leash": false,
+        "iterations": 5,
+        "mean_ms": 1319.36,
+        "median_ms": 1259.06,
+        "stdev_ms": 151.01,
+        "p99_ms": 1570.64,
+        "min_ms": 1178.51,
+        "max_ms": 1570.64,
+        "auth_overhead_mean_ms": 0.0,
+        "errors": 0,
+        "error_details": []
+      },
+      "leash": {
+        "task": "T2: read_and_write",
+        "leash": true,
+        "iterations": 5,
+        "mean_ms": 1665.69,
+        "median_ms": 1613.69,
+        "stdev_ms": 536.47,
+        "p99_ms": 2414.61,
+        "min_ms": 1077.87,
+        "max_ms": 2414.61,
+        "auth_overhead_mean_ms": 6.5273,
+        "errors": 0,
+        "error_details": []
+      },
+      "overhead_ms": 346.33,
+      "overhead_pct": 26.2498
+    },
+    {
+      "task": "T3: security_audit",
+      "baseline": {
+        "task": "T3: security_audit",
+        "leash": false,
+        "iterations": 5,
+        "mean_ms": 8885.31,
+        "median_ms": 8090.76,
+        "stdev_ms": 1804.27,
+        "p99_ms": 11233.99,
+        "min_ms": 6862.5,
+        "max_ms": 11233.99,
+        "auth_overhead_mean_ms": 0.0,
+        "errors": 0,
+        "error_details": []
+      },
+      "leash": {
+        "task": "T3: security_audit",
+        "leash": true,
+        "iterations": 5,
+        "mean_ms": 7051.17,
+        "median_ms": 6794.71,
+        "stdev_ms": 1642.56,
+        "p99_ms": 9362.09,
+        "min_ms": 5310.51,
+        "max_ms": 9362.09,
+        "auth_overhead_mean_ms": 6.1653,
+        "errors": 0,
+        "error_details": []
+      },
+      "overhead_ms": -1834.14,
+      "overhead_pct": -20.6424
+    },
+    {
+      "task": "T4: db_analysis",
+      "baseline": {
+        "task": "T4: db_analysis",
+        "leash": false,
+        "iterations": 5,
+        "mean_ms": 6399.26,
+        "median_ms": 6042.77,
+        "stdev_ms": 1487.4,
+        "p99_ms": 8649.65,
+        "min_ms": 4607.01,
+        "max_ms": 8649.65,
+        "auth_overhead_mean_ms": 0.0,
+        "errors": 0,
+        "error_details": []
+      },
+      "leash": {
+        "task": "T4: db_analysis",
+        "leash": true,
+        "iterations": 5,
+        "mean_ms": 7194.46,
+        "median_ms": 6886.24,
+        "stdev_ms": 912.49,
+        "p99_ms": 8521.11,
+        "min_ms": 6221.82,
+        "max_ms": 8521.11,
+        "auth_overhead_mean_ms": 6.7593,
+        "errors": 0,
+        "error_details": []
+      },
+      "overhead_ms": 795.2,
+      "overhead_pct": 12.4264
+    },
+    {
+      "task": "T5: full_pipeline",
+      "baseline": {
+        "task": "T5: full_pipeline",
+        "leash": false,
+        "iterations": 5,
+        "mean_ms": 1467.29,
+        "median_ms": 1462.27,
+        "stdev_ms": 265.84,
+        "p99_ms": 1846.66,
+        "min_ms": 1158.38,
+        "max_ms": 1846.66,
+        "auth_overhead_mean_ms": 0.0,
+        "errors": 0,
+        "error_details": []
+      },
+      "leash": {
+        "task": "T5: full_pipeline",
+        "leash": true,
+        "iterations": 5,
+        "mean_ms": 1886.42,
+        "median_ms": 1677.77,
+        "stdev_ms": 680.42,
+        "p99_ms": 3073.96,
+        "min_ms": 1440.45,
+        "max_ms": 3073.96,
+        "auth_overhead_mean_ms": 6.2349,
+        "errors": 0,
+        "error_details": []
+      },
+      "overhead_ms": 419.13,
+      "overhead_pct": 28.5649
+    }
+  ],
+  "totals": {
+    "baseline_ms": 19561.02,
+    "leash_ms": 19700.46,
+    "overhead_ms": 139.44,
+    "overhead_pct": 0.7128
+  }
+}

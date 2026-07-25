@@ -1,0 +1,50 @@
+[
+  {
+    "epoch_offset": 0,
+    "time_offset_s": 0,
+    "heartbeat_age": 0,
+    "auth_success": true
+  },
+  {
+    "epoch_offset": 1,
+    "time_offset_s": 2,
+    "heartbeat_age": 1,
+    "auth_success": true
+  },
+  {
+    "epoch_offset": 2,
+    "time_offset_s": 4,
+    "heartbeat_age": 2,
+    "auth_success": true
+  },
+  {
+    "epoch_offset": 3,
+    "time_offset_s": 6,
+    "heartbeat_age": 3,
+    "auth_success": true
+  },
+  {
+    "epoch_offset": 4,
+    "time_offset_s": 8,
+    "heartbeat_age": 4,
+    "auth_success": false
+  },
+  {
+    "epoch_offset": 5,
+    "time_offset_s": 10,
+    "heartbeat_age": 5,
+    "auth_success": false
+  },
+  {
+    "epoch_offset": 6,
+    "time_offset_s": 12,
+    "heartbeat_age": 6,
+    "auth_success": false
+  },
+  {
+    "epoch_offset": 7,
+    "time_offset_s": 14,
+    "heartbeat_age": 7,
+    "auth_success": false
+  }
+]
