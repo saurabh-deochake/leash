@@ -10,6 +10,7 @@ setup(
     version="0.1.0",
     description="Liveness-Enforced Authorization for Swarm Hierarchies",
     author="Research Project",
+    license="CC BY-NC-ND 4.0",
     packages=find_packages(),
     install_requires=[
         "cryptography>=41.0.0",

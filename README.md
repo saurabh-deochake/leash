@@ -77,3 +77,7 @@ Raw outputs for each experiment are in `results/` under the matching name;
 No dataset, human-subject data, or proprietary model is involved. The
 sandbox (`python/experiments/tools/`) is a local mock tool server; all
 credentials, users, and "attacks" in it are synthetic.
+
+## License
+
+This artifact is licensed under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/).
