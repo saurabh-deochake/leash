@@ -1,5 +1,7 @@
 # LEASH: Zero-Trust Containment for AI Agent Swarms
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22775602.svg)](https://doi.org/10.5281/zenodo.22775602)
+
 Artifact accompanying the AISec 2026 (ACM CCS) paper.
 
 LEASH (Liveness-Enforced Authorization for Swarm Hierarchies) binds the
